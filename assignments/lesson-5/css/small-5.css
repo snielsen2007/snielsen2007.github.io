@@ -1,0 +1,162 @@
+body { 
+    background-color: #fff;
+    text-align: center; 
+}
+header {
+    margin: .5em auto;
+    border: 1px solid #fff;
+    box-shadow: 0 0 30px #777;
+
+}
+header img, .headertext{ 
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px auto;
+}
+nav {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #365EB2;
+	text-align: center;
+	box-shadow: 0px 3px 3px #777;
+	padding: 0;
+    overflow: hidden;
+    font-family:'Roboto', sans-serif;
+    list-style-type: none;  
+}
+.site-navigation {
+    padding: 0;
+    margin: 0; 
+}
+nav a {
+	display: block;
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+nav .dropdown{
+    display: none;    
+}
+nav a:hover {
+	background-color:#6697FF;
+    color: #365EB2;
+    font-weight: bolder; 
+}
+.active {
+    background-color: #6697FF;
+    color: #365EB2;
+    font-weight: bolder;
+}
+nav li {
+	display: block;
+}
+h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 2em;
+    color: #6697FF;
+}
+h2 {
+    font-size: 1.5em;
+    color: #365EB2; 
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    font-size: 1.5em;
+    color: #9BB26D; 
+    font-family: 'Roboto', sans-serif;
+    line-height: .75%;
+}
+pre {
+  display: block;
+  font-family: 'Roboto';
+  white-space: pre;
+  margin: 1em 0;
+}
+main{
+    width: 60%; 
+    margin: 5% auto;
+    text-align: center;
+}
+.townheader{
+text-shadow: 1px 2px 1px #365EB2;
+font-weight: 900px
+}
+main h2{
+    margin: 10% auto; 
+    display: inline-block;
+}
+.heroblock{
+    position: relative;
+}
+.weathersummary {
+    display: inline-block;
+    z-index: 1;
+    vertical-align: middle;
+    background: radial-gradient(#365EB2, #6697FF);
+    border: .25px solid #777;
+    padding: 0 .75em 1em;
+    color: #fff;
+    box-shadow: 0 0 40px #444; 
+    width: 250px;
+    top: 10px; 
+    left: 10px; 
+    margin: 10% auto;
+    position: absolute; 
+}
+.weatherdetails {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .25em; 
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+.heroimage {
+    margin: 5% auto;
+    z-index: 3;
+    width: 100%; 
+    height: 200px; 
+}
+.fivedayforecast {
+    display: none;  
+}
+.muttonbusting {
+    text-align: left;
+    border: .5px #777;
+    background: rgb(211, 210, 210);
+    padding: 3em 2em;
+    position: relative; 
+    display: block;
+    margin: 5% auto; 
+}
+.muttonbusting h2{
+    padding: 0; 
+    margin: 0 auto; 
+}
+.muttonbustin-image{
+    width: 80%;
+    max-width: 350px;
+    margin: .5em auto;
+    padding: 0em .5em;
+}
+.footer {
+    margin: 5% auto;
+    position: relative;
+    background:#6697FF;
+    border: .5px solid #777;
+    padding: 3em 2em;
+    color: #fff;
+    display: inline-block;
+}
+.contactinfo iframe{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0; 
+}
+footer{
+    display: block;
+    width: 100%;
+    margin: 10% auto;
+    background:#365EB2;
+     color: #fff;
+}
