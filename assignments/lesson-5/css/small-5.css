@@ -148,6 +148,9 @@ main h2{
     color: #fff;
     display: inline-block;
 }
+.socialicon{
+    background: none; 
+}
 .contactinfo iframe{
     width: 80%;
     margin: 0 auto;
