@@ -1,20 +1,12 @@
 //Wednesday, 13 February 2019
+function currentDate() {
+    let fulldate = new Date();
+    let day = fulldate.getDate();
+    let numericmonth = fulldate.getMonth();
+    let year = fulldate.getFullYear();
+    let numericweekday = fulldate.getDay();
+    let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-let today = new Date();
-let date = today.getFullYear() + get;
-document.getElementById('currentdate').innerHTML = date;
-
-let today = new Date();
-let year = today.getFullYear();
-let month = today.getMonth();
-//convert to text
-let monthname = "January";
-document.getElementById('currentdate').innerHTML = currentdate;
-
-    var d = new Date();
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-document.getElementById("demo").innerHTML = months[d.getMonth()];
-    
-var d = new Date();
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-document.getElementById("demo").innerHTML = days[d.getDay()];
+    document.getElementById("currentdate").innerHTML = weekday[numericweekday] + ", "+day +month[numericmonth]+" "+year;
+}
