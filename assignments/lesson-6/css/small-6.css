@@ -123,7 +123,6 @@ main h2{
 }
 .fivedayforecast {
     display: none; 
-    clear: both; 
 }
 .muttonbusting {
     text-align: left;
@@ -133,7 +132,6 @@ main h2{
     position: relative; 
     display: block;
     margin: 1% auto; 
-    clear: both;
 }
 .muttonbusting h2{
     padding: 0; 
@@ -152,6 +150,7 @@ main h2{
     padding: 2em 3em;
     color: #fff;
     display: block;
+    clear: both; 
 }
 .contactinfo iframe{
     width: 80%;
