@@ -106,7 +106,12 @@ main h2{
 }
 .gallerygrid{
     display: grid;
-    grid-column: auto; 
+}
+figure{
+    box-shadow: 0 0 .5em rgb(99, 99, 99);
+}
+figure > img{
+    width: 100%; 
 }
 .weathersummary {
     display: inline-block;
