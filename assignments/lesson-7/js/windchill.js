@@ -3,7 +3,7 @@
 * Output: return the wind chill facotr in Fahrenheit
 */
 
-function doInputOutput(){
+function calculateWindChill(){
     let tempF = parseFloat(document.getElementById('temperaturevalue').innerHTML);
     let speed = parseFloat(document.getElementById('windspeedvalue').innerHTML);
     let result = windChill(tempF,speed);
