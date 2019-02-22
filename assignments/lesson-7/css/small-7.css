@@ -104,6 +104,10 @@ main h2{
 .heroblock{
     position: relative;
 }
+.gallerygrid{
+    display: grid;
+    grid-column: auto; 
+}
 .weathersummary {
     display: inline-block;
     z-index: 1;
