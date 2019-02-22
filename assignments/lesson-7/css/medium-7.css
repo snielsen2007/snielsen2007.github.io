@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 460px){
 .gallerygrid{
     grid-template-columns: 1fr 1fr;
 }

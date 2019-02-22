@@ -1,4 +1,4 @@
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 960px){
 h1{
     font-size: 3em;
 }
@@ -27,17 +27,14 @@ nav .dropdown{
 nav li:first-child {
     display: none;
 }
-/* Change the link color to #111 (black) on hover */
 nav a:hover {
 	background-color:#B7A41F;
     color: #0A0446;
     font-weight: bolder;
 }
-
 article image {
     float: right; 
 }
-
 main, footer{
     max-width: 960px; 
     margin: 0 auto;

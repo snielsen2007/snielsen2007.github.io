@@ -4,33 +4,19 @@
 */
 
 function doInputOutput(){
-    var tempF = parseFloat(document.getElementById('tempInputBox').value);
-    var speed = parseFloat(document.getElementById('windInputBox').value);
-    var result = windChill(tempF,speed);
-    document.getElementById('outputDiv').innerHTML = result + 'degrees Farhenheit';
+    let tempF = parseFloat(document.getElementById('temperaturevalue').innerHTML);
+    let speed = parseFloat(document.getElementById('windspeedvalue').innerHTML);
+    let result = windChill(tempF,speed);
+    document.getElementById('windchillvalue').innerHTML = result;
 }
                         
 function windChill (tempF, speed) {
 //set variables
-var t = tempF;
-                        var s = speed;
+    let t = tempF;
+    let s = speed;
                         
-                        //calculate wind chill
-                        var wc = 35.74 + 0.6215 * t - 35.75 * Math.pow( s, 0.16 ) + 0.4275 * t * Math.pow(s,0.16);
-                        
-                        //return result
-                        return wc;
-                        }
-                        
-</script>
-</head>
-                <body>
-
-                    Temperature:<input type="text" id="tempInputBox">
-                        <br>
-                            Wind Speed:<input type="text" id="windInputBox">
-                                <br>
-                                    <button type="button" onclick="doInputOutput()">Wind Chill</button>
-                                    <div id="outputDiv"></div>
-</body>
-</html>
+//calculate wind chill
+    let wc = 35.74 + 0.6215 * t - 35.75 * Math.pow( s, 0.16 ) + 0.4275 * t * Math.pow(s,0.16);                        
+//return result
+    return wc;
+}
