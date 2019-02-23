@@ -107,9 +107,6 @@ main h2{
 .gallerygrid{
     display: grid;
 }
-figure{
-    box-shadow: 0 0 .5em rgb(99, 99, 99);
-}
 figure > img{
     width: 100%; 
 }

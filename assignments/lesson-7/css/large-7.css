@@ -50,6 +50,9 @@ main, footer{
 .gallerygrid{
     grid-template-columns: 1fr 1fr 1fr;
 }
+figure:hover{
+    box-shadow: 0 0 .5em rgb(99, 99, 99);
+}
 /*
 .fig1{
     grid-column: 1;
