@@ -26,6 +26,9 @@ nav a:hover {
     color: #0A0446;
     font-weight: bolder;
 }
+.weatherdetails {
+    font-size: 1.25em;
+}
 article image {
     float: right; 
 }
