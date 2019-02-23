@@ -167,8 +167,8 @@ figure > img{
     display: block;
     clear: both; 
 }
-#map{
-    height: 100%;
+.footersection iframe{
+    max-width: 80%
     margin: 0 auto;
     padding: 0
 }
