@@ -9,7 +9,6 @@ nav {
     flex-direction: row;
     justify-content: center; 
 }
-
 nav li {
   padding: 0;
   position: relative;
@@ -50,4 +49,5 @@ main, footer{
     max-width: 350px; 
     vertical-align: middle;
     padding: 0; 
+}
 }
