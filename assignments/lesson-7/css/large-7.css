@@ -7,38 +7,6 @@ h2 {
     font-size: 2em;
 }
 
-nav {
-  max-width: 100%; 
-}
-.site-navigation{
-    flex-direction: row;
-    justify-content: center; 
-}
-
-nav li {
-  padding: 0;
-  position: relative;
-  align-content: center; 
-  display: inline-block; 
-}
-nav .dropdown{
-    display: inline-block;
-}
-nav li:first-child {
-    display: none;
-}
-nav a:hover {
-	background-color:#B7A41F;
-    color: #0A0446;
-    font-weight: bolder;
-}
-article image {
-    float: right; 
-}
-main, footer{
-    max-width: 960px; 
-    margin: 0 auto;
-}
 .fivedayforecast {
     display: inline-block;
 }
@@ -63,21 +31,4 @@ grid-column: 2;
 grid-row: 2; 
 }
 */
-.muttonbustin-image{
-    float: right;
-    padding: 0em .5em 1em .5em;
-}
-.footersection{
-    display: block;
-}
-.contactinfo, .sociallinks{
-    text-align: left; 
-}
-.footersection iframe{
-    float:right;
-    margin: 0 auto;
-    max-width: 350px; 
-    vertical-align: middle;
-    padding: 0; 
-}
 }
