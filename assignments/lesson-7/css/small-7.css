@@ -167,10 +167,10 @@ figure > img{
     display: block;
     clear: both; 
 }
-.footersection iframe{
-    max-width: 80%;
+#map{
+    height: 100%;
     margin: 0 auto;
-    padding: .5em; 
+    padding: 0
 }
 .footerbar{
     display: block;
