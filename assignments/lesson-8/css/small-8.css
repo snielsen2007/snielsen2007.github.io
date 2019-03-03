@@ -225,12 +225,11 @@ form label.top input, form label.top select, form label.top textarea{
     color:  #2C247F; 
 }
 .sbs{
-    display: flex;
-    flex-flow: nowrap row; 
-    justify-content: space-around; 
-    padding: .75rem 0;
-    color: #555;
-    max-width: 5rem;
+    margin-top: .4em;
+    margin-left: .4em; 
+    width: auto;
+    padding: .5em .5em;
+    display: block; 
 }
 
 form input.submitBtn{
