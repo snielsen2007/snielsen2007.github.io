@@ -42,7 +42,7 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>My Information</legend>
-                <label class="top">full name*<input type="text" name="name" pattern=[A-Za-z\s]{5,} required></label>
+                <label class="top">Full Name*<input type="text" name="name" pattern=[A-Za-z\s]{5,} required></label>
                 <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="janedoe@gmail.com" required></label>
                 <label class="top">Zip Code<input type="number" name="zip" required></label>
@@ -58,8 +58,10 @@
                         <option value="Thunderstorm">
                         <option value="Tornado">
                     </datalist>
+                <div class=rangecontainer>
                 <label class="top">Storm Severity (1 to 10):<input type="range" name="stormseverity" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
                 <span id="ratingvalue">5</span><br>
+                </div>
                 
                 <label class="top">Storm Region
                     <select name="subject" >
@@ -69,14 +71,16 @@
                         <option value="fishhaven">Fish Haven</option>
                     </select>
                 </label>
-                <div>User In Danger Level</div>
+                <div>Is The User In Danger?</div>
+                <div class="radiocontainer">
                 <label class="sbs">yes<input type="radio" name="danger" value="yes"></label>
                 <label class="sbs">maybe<input type="radio" name="danger" value="maybe"></label>
                 <label class="sbs">no<input type="radio" name="danger" value="no"></label>
+                </div>
                 <label class="top">Comments<textarea rows="2" name="comments"></textarea></label>
+                
             </fieldset>
             <input type="submit" value="propose my course" class="submitBtn">
-         
     </main>
     <footer>
         <div class="footersection">

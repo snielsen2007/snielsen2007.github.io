@@ -186,7 +186,7 @@ figure > img{
 }
 /*---------------Storm Center-------------------*/
 form fieldset{
-    margin: 2rem 0;
+    margin: 2rem .25rem;
     border: 1px solid #2C247F;
     border-radius: 10px;
     padding: .5rem 2%; 
@@ -204,7 +204,7 @@ form label.top, form div {
     color: black;
     font-size: .9rem;
 }
-form label.top input, form label.top select{
+form label.top input, form label.top select, form label.top textarea{
     display: block;
     font-size: 1.25 rem;
     border: solid 1px #999;
@@ -215,14 +215,24 @@ form label.top input, form label.top select{
     max-width: 20rem;
     background-color: rgba (0,0,0,0.1);
 }
-label.sbs, input [type=radio]{
-    display: inline;
-    text-align: right; 
-    justify-content: left; 
+.rangecontainer{
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-end; 
+}
+#ratingvalue{
+    font-size: 1.25em;
+    color:  #2C247F; 
+}
+.sbs{
+    display: flex;
+    flex-flow: nowrap row; 
+    justify-content: space-around; 
     padding: .75rem 0;
     color: #555;
-    max-width: 20rem;
+    max-width: 5rem;
 }
+
 form input.submitBtn{
     border: none;
     background-color: #2C247F;
@@ -231,7 +241,7 @@ form input.submitBtn{
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%; 
     width: 96%;
-    max-width: 10rem;
+    max-width: 20rem;
 }
 form input.submitBtn:hover{
     background-color: #0A0446; 
