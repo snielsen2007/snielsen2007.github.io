@@ -253,6 +253,6 @@ form label.top input:required:valid{
     border: black solid 1px;
 }
 .successmessage{
-    margin-bottom: 30rem;
-    margin-top: 10rem; 
+    margin-bottom: 25rem;
+    margin-top: 8rem; 
 }
