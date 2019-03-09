@@ -22,9 +22,10 @@ request.onload = function () {
     
     for (let i = 0; i < townList.length; i++) {
 
-        if (i == 1 || i == 4 || i == 5) {
+        if (townList[i].name == "Fish Haven" || townList[i].name == "Preston" || townList[i].name == "Soda Springs") {
             
         
+            let myArticleContainer=document.createElement('div')
             let myArticle = document.createElement('article');
             let myH2 = document.createElement('h2');
             let myPara1 = document.createElement('p');
@@ -34,20 +35,24 @@ request.onload = function () {
             let myImg = document.createElement('img');
 
             myH2.textContent = townList[i].name;
-            myPara1.textContent = 'Motto' + townList[i].motto;
+            myPara1.textContent = townList[i].motto;
             myPara2.textContent = 'Year Founded: ' + townList[i].yearFounded;
             myPara3.textContent = 'Population: ' + townList[i].currentPopulation;
-            myPara4.textContent = 'Annual Rain Fall:' + townList[i].averageRainfall; + 'inches';
-            myImg.setAttribute('src', 'images/' + townList[i].name + '.jpg');
-            myImg.setAttribute('alt', 'The city of ' + townList[i].name + 'picture');
+            myPara4.textContent = 'Annual Rain Fall: ' + townList[i].averageRainfall; + 'inches';
+            myImg.setAttribute('src', 'images/towndata/' + townList[i].name + '.jpg');
+            myImg.setAttribute('alt', 'The city of ' + townList[i].name + ' picture');
+            myPara1.setAttribute('class', 'motto');
 
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+            myArticle.appendChild(myImg);
 
-            townfacts.appendChild(myH2);
-            townfacts.appendChild(myPara1);
-            townfacts.appendChild(myPara2);
-            townfacts.appendChild(myPara3);
-            townfacts.appendChild(myPara4);
-            townfacts.appendChild(myImg);
+            townfacts.appendChild(myArticleContainer); 
+            myArticleContainer.appendChild(myArticle);
+
         }
     }
 }

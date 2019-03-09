@@ -265,6 +265,53 @@ form label.top input:required:valid{
     margin-top: 8rem; 
 }
 
-#tempdiv p{
-    background-color: red; 
+/*------------Town Data---------------*/
+
+#townfactscontainer{
+    display:grid;
+    grid-gap: 1.25em;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: end;
 }
+#townfactscontainer div{
+    border: black solid .05em;
+    padding: .5em;
+    background-color: #A1A1A9;
+}
+#townfactscontainer article{
+    border: grey solid .05em;
+    box-shadow: 0 0 30px #777;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    align-content: flex-end;
+}
+#townfactscontainer img{
+    max-width: 100%; 
+}
+#townfactscontainer .motto{
+    font-style: italic; 
+    font-weight: bold; 
+    height: 3em; 
+}
+/*
+#townfactscontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#townfactscontainer div{
+    border: grey solid .05em;
+    padding: .5em;   
+    margin: 1em;
+    max-width: 25%; 
+}
+#townfactscontainer article{
+    border: grey solid .05em;
+    box-shadow: 0 0 30px #777;
+    padding: .5em;
+    background-color: white; 
+}
+*/
