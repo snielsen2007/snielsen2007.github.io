@@ -1,5 +1,5 @@
-//grab references to the <header> and <section> elements and store them in variables
-let header = document.querySelector('header');
+//define the container to build within
+let townfacts = document.querySelector('#townfactscontainer');
 let section = document.querySelector('section');
 //use an API called XMLHttpRequest --a JavaScript object that allows us to make network requests to retrieve resources from a server via JavaScript
 // store the URL of the JSON we want to retrieve in a variable
@@ -14,45 +14,40 @@ request.responseType = 'json';
 request.send();
 //store the response to our request (available in the response property) in a variable; 
 //this variable will now contain the JavaScript object based on the JSON! 
-//Then pass that object to two function calls — the first one will fill the < header > with the correct data, 
-//the second one will create an information card for each town , and insert it into the < section >
+//Then pass that object to function calls
 request.onload = function () {
-    let resultJson = request.response;
-    console.log(resultJson)
-    populateHeader(resultJson);
-    showTown(resultJson.towns);
-}
-//populate the header
-function populateHeader(jsonObj) {
-    let myH1 = document.createElement('h1');
-    myH1.textContent = jsonObj['squadName'];
-    header.appendChild(myH1);
-
-    let myPara = document.createElement('p');
-    myPara.textContent = 'Name: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-    header.appendChild(myPara);
-}
-function showTown(townList) {
+    let responsedata = request.response;
+    let townList = responsedata['towns'];
+    console.log(responsedata)
     
-    let mytempdiv = document.getElementById('tempdiv'); 
     for (let i = 0; i < townList.length; i++) {
-        let myArticle = document.createElement('article');
-        let myH2 = document.createElement('h2');
-        let myPara1 = document.createElement('p');
-        let myPara2 = document.createElement('p');
-        let myPara3 = document.createElement('p');
-        let myList = document.createElement('ul');
 
-        myH2.textContent = townList[i].name;
-        myPara1.textContent = 'Year Founded: ' + townList[i].yearFounded;
-        myPara2.textContent = 'Current Population: ' + townList[i].currentPopulation;
-        myPara3.textContent = 'Superpowers:';
-
+        if (i == 1 || i == 4 || i == 5) {
+            
         
+            let myArticle = document.createElement('article');
+            let myH2 = document.createElement('h2');
+            let myPara1 = document.createElement('p');
+            let myPara2 = document.createElement('p');
+            let myPara3 = document.createElement('p');
+            let myPara4 = document.createElement('p');
+            let myImg = document.createElement('img');
 
-        mytempdiv.appendChild(myH2);
-        mytempdiv.appendChild(myPara1);
-        mytempdiv.appendChild(myPara2);
-        mytempdiv.appendChild(myPara3);
+            myH2.textContent = townList[i].name;
+            myPara1.textContent = 'Motto' + townList[i].motto;
+            myPara2.textContent = 'Year Founded: ' + townList[i].yearFounded;
+            myPara3.textContent = 'Population: ' + townList[i].currentPopulation;
+            myPara4.textContent = 'Annual Rain Fall:' + townList[i].averageRainfall; + 'inches';
+            myImg.setAttribute('src', 'images/' + townList[i].name + '.jpg');
+            myImg.setAttribute('alt', 'The city of ' + townList[i].name + 'picture');
+
+
+            townfacts.appendChild(myH2);
+            townfacts.appendChild(myPara1);
+            townfacts.appendChild(myPara2);
+            townfacts.appendChild(myPara3);
+            townfacts.appendChild(myPara4);
+            townfacts.appendChild(myImg);
+        }
     }
 }
