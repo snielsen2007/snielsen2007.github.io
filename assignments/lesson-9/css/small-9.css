@@ -207,14 +207,14 @@ form label.top, form div {
 }
 form label.top input, form label.top select, form label.top textarea{
     display: block;
-    font-size: 1.25 rem;
+    font-size: 1.25em;
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
     color: #555;
     width: 100%;
     max-width: 18rem;
-    background-color: rgba (0,0,0,0.1);
+    background-color: rgba(red, green, blue, alpha) (0,0,0,0.1);
 }
 .rangecontainer{
     display: flex; 
