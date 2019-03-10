@@ -270,48 +270,33 @@ form label.top input:required:valid{
 #townfactscontainer{
     display:grid;
     grid-gap: 1.25em;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: end;
+    grid-template-columns: 1fr;
+    padding: 2em 0;
+    align-items: center;  
 }
 #townfactscontainer div{
-    border: black solid .05em;
-    padding: .5em;
-    background-color: #A1A1A9;
+    border: rgb(71, 71, 71) solid .075em;
+    padding: .75em;
+    background-color: #BEBEC4;
 }
 #townfactscontainer article{
-    border: grey solid .05em;
-    box-shadow: 0 0 30px #777;
-    padding: 0;
+    box-shadow: 5px 10px 40px #777;
+    padding-top: 2em;
     background-color: white;
     display: flex;
     flex-direction: column; 
     align-content: flex-end;
 }
 #townfactscontainer img{
-    max-width: 100%; 
+    max-width: 100%;
+}
+#townfactscontainer.h2{
+    padding: 2em;
 }
 #townfactscontainer .motto{
     font-style: italic; 
-    font-weight: bold; 
-    height: 3em; 
+    font-weight: bold;
 }
-/*
-#townfactscontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#townfactscontainer .towndatalabel{
+    font-weight: bold;
 }
-#townfactscontainer div{
-    border: grey solid .05em;
-    padding: .5em;   
-    margin: 1em;
-    max-width: 25%; 
-}
-#townfactscontainer article{
-    border: grey solid .05em;
-    box-shadow: 0 0 30px #777;
-    padding: .5em;
-    background-color: white; 
-}
-*/

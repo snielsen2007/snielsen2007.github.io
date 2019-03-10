@@ -30,24 +30,42 @@ request.onload = function () {
             let myH2 = document.createElement('h2');
             let myPara1 = document.createElement('p');
             let myPara2 = document.createElement('p');
+            let mySpan2a = document.createElement('span');
+            let mySpan2b = document.createElement('span');
             let myPara3 = document.createElement('p');
+            let mySpan3a = document.createElement('span');
+            let mySpan3b = document.createElement('span');
             let myPara4 = document.createElement('p');
+            let mySpan4a = document.createElement('span');
+            let mySpan4b = document.createElement('span');
             let myImg = document.createElement('img');
 
             myH2.textContent = townList[i].name;
             myPara1.textContent = townList[i].motto;
-            myPara2.textContent = 'Year Founded: ' + townList[i].yearFounded;
-            myPara3.textContent = 'Population: ' + townList[i].currentPopulation;
-            myPara4.textContent = 'Annual Rain Fall: ' + townList[i].averageRainfall; + 'inches';
+            mySpan2a.textContent = 'Year Founded: ';
+            mySpan2b.textContent = townList[i].yearFounded;
+            mySpan3a.textContent = 'Population: '
+            mySpan3b.textContent = townList[i].currentPopulation;
+            mySpan4a.textContent = 'Annual Rain Fall: ';
+            mySpan4b.textContent = townList[i].averageRainfall + ' "';
             myImg.setAttribute('src', 'images/towndata/' + townList[i].name + '.jpg');
-            myImg.setAttribute('alt', 'The city of ' + townList[i].name + ' picture');
+            myImg.setAttribute('alt', 'The city of ' + townList[i].name + '  picture');
             myPara1.setAttribute('class', 'motto');
+            mySpan2a.setAttribute('class', 'towndatalabel');
+            mySpan3a.setAttribute('class', 'towndatalabel');
+            mySpan4a.setAttribute('class', 'towndatalabel');
 
             myArticle.appendChild(myH2);
             myArticle.appendChild(myPara1);
             myArticle.appendChild(myPara2);
+            myPara2.appendChild(mySpan2a);
+            myPara2.appendChild(mySpan2b);
             myArticle.appendChild(myPara3);
+            myPara3.appendChild(mySpan3a);
+            myPara3.appendChild(mySpan3b);
             myArticle.appendChild(myPara4);
+            myPara4.appendChild(mySpan4a);
+            myPara4.appendChild(mySpan4b);
             myArticle.appendChild(myImg);
 
             townfacts.appendChild(myArticleContainer); 
