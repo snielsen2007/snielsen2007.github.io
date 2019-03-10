@@ -18,14 +18,4 @@ h2 {
 figure:hover{
     box-shadow: 0 0 .5em rgb(99, 99, 99);
 }
-#townfactscontainer{
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: end;
-}
-#townfactscontainer .motto{
-    font-style: italic; 
-    font-weight: bold; 
-    height: 2.5em; 
-    padding: 1em; 
-}
 }
