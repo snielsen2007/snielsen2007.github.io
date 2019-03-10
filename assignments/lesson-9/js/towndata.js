@@ -39,6 +39,11 @@ request.onload = function () {
             let mySpan4a = document.createElement('span');
             let mySpan4b = document.createElement('span');
             let myImg = document.createElement('img');
+            let link = townList[i].name;
+            let linkname = link.toLowerCase();   // this makes it all lowercase
+           
+
+           
 
             myH2.textContent = townList[i].name;
             myPara1.textContent = townList[i].motto;
@@ -48,12 +53,15 @@ request.onload = function () {
             mySpan3b.textContent = townList[i].currentPopulation;
             mySpan4a.textContent = 'Annual Rain Fall: ';
             mySpan4b.textContent = townList[i].averageRainfall + ' "';
-            myImg.setAttribute('src', 'images/towndata/' + townList[i].name + '.jpg');
+            link = link.replace(/\s/g, '');  // this is regex to remove the spaces
+            myImg.setAttribute('src', 'images/towndata/' + linkname + '.jpg');
             myImg.setAttribute('alt', 'The city of ' + townList[i].name + '  picture');
             myPara1.setAttribute('class', 'motto');
             mySpan2a.setAttribute('class', 'towndatalabel');
             mySpan3a.setAttribute('class', 'towndatalabel');
             mySpan4a.setAttribute('class', 'towndatalabel');
+
+            
 
             myArticle.appendChild(myH2);
             myArticle.appendChild(myPara1);
