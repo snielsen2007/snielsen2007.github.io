@@ -54,7 +54,7 @@ request.onload = function () {
             mySpan4a.textContent = 'Annual Rain Fall: ';
             mySpan4b.textContent = townList[i].averageRainfall + ' "';
             link = link.replace(/\s/g, '');  // this is regex to remove the spaces
-            myImg.setAttribute('src', 'images/towndata/' + linkname + '.jpg');
+            myImg.setAttribute('src', 'images/towndata/' + linkname + '300px' + '.jpg');
             myImg.setAttribute('alt', 'The city of ' + townList[i].name + '  picture');
             myPara1.setAttribute('class', 'motto');
             mySpan2a.setAttribute('class', 'towndatalabel');
