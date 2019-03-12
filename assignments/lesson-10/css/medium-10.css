@@ -1,0 +1,65 @@
+@media only screen and (min-width: 460px){
+.gallerygrid{
+    grid-template-columns: 1fr 1fr;
+}
+nav {
+  max-width: 100%; 
+}
+.site-navigation{
+    flex-direction: row;
+    justify-content: center; 
+}
+nav li {
+  padding: 0;
+  position: relative;
+  align-content: center; 
+  display: inline-block; 
+}
+nav .dropdown{
+    display: inline-block;
+}
+nav li:first-child {
+    display: none;
+}
+nav a:hover {
+	background-color:#B7A41F;
+    color: #0A0446;
+    font-weight: bolder;
+}
+.weatherdetails {
+    font-size: 1.25em;
+}
+article image {
+    float: right; 
+}
+main, footer{
+    max-width: 960px; 
+    margin: 0 auto;
+}
+.muttonbustin-image{
+    float: right;
+    padding: 0em .5em 1em .5em;
+}
+.footersection{
+    display: block;
+}
+.contactinfo, .sociallinks{
+    text-align: left; 
+}
+.footersection iframe{
+    float:right;
+    margin: 0 auto;
+    max-width: 350px; 
+    vertical-align: middle;
+    padding: 0; 
+}
+/*------------Town Data---------------*/
+#townfactscontainer{
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: end;
+}
+#townfactscontainer .motto{
+    height: 5em; 
+    font-size: .8em;
+}
+}

@@ -1,0 +1,25 @@
+@media only screen and (min-width: 960px){
+h1{
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+.fivedayforecast {
+    display: inline-block;
+}
+.forecast-image{
+    padding: .25em;
+    margin: .25em; 
+}
+.gallerygrid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+figure:hover{
+    box-shadow: 0 0 .5em rgb(99, 99, 99);
+}
+#townfactscontainer .motto{
+    height: 2.5em; 
+    font-size: 1em;
+}
+}
