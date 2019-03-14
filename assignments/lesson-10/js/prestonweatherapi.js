@@ -7,8 +7,8 @@ weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
     //document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
-    let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"//add loop so if there is more than one icon, it pulls both
-    let desc = weatherData.weather[0].description;
+    //let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"//add loop so if there is more than one icon, it pulls both
+    //let desc = weatherData.weather[0].description;
 
    // document.getElementById('cc-img').setAttribute('src', icon);
    // document.getElementById('cc-img').setAttribute('alt', desc);
