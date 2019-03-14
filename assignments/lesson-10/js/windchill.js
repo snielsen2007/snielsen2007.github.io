@@ -7,7 +7,8 @@
     let speed = parseFloat(document.getElementById('windspeedvalue').innerHTML);
     let result = windChill(tempF,speed);
     document.getElementById('windchillvalue').innerHTML = result.toFixed(2);
-                  
+console.log(tempF);
+console.log(speed);           
 function windChill (tempF, speed) {
 //set variables
     let t = tempF;
