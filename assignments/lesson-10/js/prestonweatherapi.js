@@ -12,6 +12,7 @@ weatherRequest.onload = function () {
     document.getElementById('humidityvalue').innerHTML = weatherData.main.humidity;
     document.getElementById('windspeedvalue').innerHTML = weatherData.wind.speed;
     //trigger windchill function
-    let windchill= callWindChill();
+    let windchill = callWindChill();
+    return windchill; 
 }
 
