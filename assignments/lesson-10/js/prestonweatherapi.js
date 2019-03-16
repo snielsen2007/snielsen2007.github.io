@@ -5,7 +5,6 @@ weatherRequest.send();
 
 weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
-    console.log(weatherData);
     let desc = weatherData.weather[0].description;
 
     document.getElementById('descriptionvalue').innerHTML = desc;

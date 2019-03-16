@@ -172,7 +172,10 @@ figure > img{
     padding: 2em 3em;
     color: #fff;
     display: block;
-    clear: both; 
+    clear: both;
+}
+.footersection a{
+    color: #fff;
 }
 .footersection iframe{
     max-width: 80%;
