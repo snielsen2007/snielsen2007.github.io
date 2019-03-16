@@ -97,9 +97,11 @@ main{
     text-align: center;
 }
 .pageheader{
-    text-shadow: 1px 2px 1px #0A0446;
-    font-weight: 900;
-    padding: 2em 0 0; 
+    text-shadow: 1px 1px 1px #0A0446;
+    font-weight: bolder;
+    padding: 2em 0 0;
+    font-stretch: extra-expanded;
+    font-size: 1.5em; 
 
 }
 main h2{
@@ -151,7 +153,7 @@ figure > img{
     padding: 3em 2em;
     position: relative; 
     display: block;
-    margin: 1% auto;
+    margin: 5% auto;
 }
 .muttonbusting h2{
     padding: 0; 
@@ -299,4 +301,13 @@ form label.top input:required:valid{
 }
 #townfactscontainer .towndatalabel{
     font-weight: bold;
+}
+/*-------------Events----------------*/
+#towneventscontainer h3{
+    color: black;
+    line-height: 1.25em; 
+    font-weight: lighter; 
+}
+.townevents{
+    margin: 5% auto; 
 }

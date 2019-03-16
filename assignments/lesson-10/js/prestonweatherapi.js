@@ -6,14 +6,12 @@ weatherRequest.send();
 weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
-    //document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
-    //let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"//add loop so if there is more than one icon, it pulls both
     let desc = weatherData.weather[0].description;
 
-   // document.getElementById('cc-img').setAttribute('src', icon);
-   // document.getElementById('cc-img').setAttribute('alt', desc);
     document.getElementById('descriptionvalue').innerHTML = desc;
-    document.getElementById('temperaturevalue').innerHTML = weatherData.main.temp;
+    document.getElementById('temperaturevalue').innerHTML = weatherData.main.temp_max;
     document.getElementById('humidityvalue').innerHTML = weatherData.main.humidity;
     document.getElementById('windspeedvalue').innerHTML = weatherData.wind.speed;
+    //call windChill function
+    function windChill(tempF, speed) { }  
 }

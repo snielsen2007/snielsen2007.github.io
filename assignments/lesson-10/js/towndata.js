@@ -17,13 +17,13 @@ request.send();
 //Then pass that object to function calls
 request.onload = function () {
     let responsedata = request.response;
-    let townList = responsedata['towns'];  
+    let townList = responsedata['towns'];
     for (let i = 0; i < townList.length; i++) {
 
         if (townList[i].name == "Fish Haven" || townList[i].name == "Preston" || townList[i].name == "Soda Springs") {
-            
-        
-            let myArticleContainer=document.createElement('div')
+
+
+            let myArticleContainer = document.createElement('div')
             let myArticle = document.createElement('article');
             let myH2 = document.createElement('h2');
             let myPara1 = document.createElement('p');
@@ -39,9 +39,9 @@ request.onload = function () {
             let myImg = document.createElement('img');
             let link = townList[i].name;
             let linkname = link.toLowerCase();   // this makes it all lowercase
-           
 
-           
+
+
 
             myH2.textContent = townList[i].name;
             myPara1.textContent = townList[i].motto;
@@ -59,7 +59,7 @@ request.onload = function () {
             mySpan3a.setAttribute('class', 'towndatalabel');
             mySpan4a.setAttribute('class', 'towndatalabel');
 
-            
+
 
             myArticle.appendChild(myH2);
             myArticle.appendChild(myPara1);
@@ -74,9 +74,10 @@ request.onload = function () {
             myPara4.appendChild(mySpan4b);
             myArticle.appendChild(myImg);
 
-            townfacts.appendChild(myArticleContainer); 
+            townfacts.appendChild(myArticleContainer);
             myArticleContainer.appendChild(myArticle);
 
         }
     }
 }
+
