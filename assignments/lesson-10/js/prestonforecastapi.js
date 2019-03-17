@@ -28,7 +28,7 @@ forecastRequest.onload = function () {
 
         let dayicon = icons[i];
 
-        let iconsrc = "http://openweathermap.org/img/w/" + dayicon + ".png";
+        let iconsrc = "https://openweathermap.org/img/w/" + dayicon + ".png";
         document.getElementById('day' + i + 'icon').src = iconsrc;
     }
 
