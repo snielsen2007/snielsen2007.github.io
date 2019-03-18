@@ -8,18 +8,21 @@ header {
     border: 1px solid #fff;
     box-shadow: 0 0 30px #777;
     line-height: 1em;
-    padding: 1em;
+    padding: 1.5em;
     display: flex; 
     flex-flow: nowrap row; 
+    align-items: flex-start; 
     justify-content: center; 
 }
-/*header img, .headertext{ 
-    display: flex;
-    flex-flow: wrap row; 
-    vertical-align: center;
-    justify-content: center;
-    margin: 0;
-}*/
+header img{
+    width: 25%;
+    max-width: 200px; 
+    padding-top: 1.5em;
+}
+header .motto{
+    font-style: italic;
+    font-size: .75em; 
+}
 nav {
 	max-width: 550px;
 	margin: auto;

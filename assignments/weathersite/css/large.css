@@ -5,6 +5,16 @@ h1{
 h2 {
     font-size: 2em;
 }
+.headertext .motto{
+    font-size: 2em; 
+}
+header img{
+    max-width: 200px; 
+}
+nav li {
+    display: block;
+    padding: 0 1.25em
+}
 .fivedayforecast{
     display: inline-block;
     text-align: center;
