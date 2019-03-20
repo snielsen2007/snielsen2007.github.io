@@ -223,8 +223,9 @@ figure > img{
     display: block;
     clear: both;
 }
-.footersection a{
+.footerbar a{
     color: #fff;
+    text-decoration: none;
 }
 .footersection iframe{
     max-width: 80%;
