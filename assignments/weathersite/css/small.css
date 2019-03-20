@@ -78,9 +78,9 @@ h2 {
     color: #0A0446; 
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
-    display: flex; 
+    /*display: flex; 
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: center;*/
 }
 h3 {
     font-size: 1.25em;
@@ -108,7 +108,7 @@ main{
 }
 main h2{
     margin: 0 auto; 
-    display: inline-block;
+   /* display: inline-block;*/
 }
 .heroblock{
     position: relative;
