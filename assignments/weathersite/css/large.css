@@ -18,10 +18,10 @@ nav li {
 .fivedayforecast{
     display: inline-block;
     text-align: center;
-    margin: 5% auto;  
+    margin-top: 5% 
 }
 .fivedayforecast table{
-    margin-top: 3%; 
+    margin-top: 3%;
 }
 .forecast-image{
     padding: .25em;

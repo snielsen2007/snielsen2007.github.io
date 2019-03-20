@@ -1,7 +1,6 @@
 body { 
     background-color: #fff;
     text-align: center;
-
 }
 header {
     margin: .5em 0;
@@ -102,7 +101,7 @@ main{
 .pageheader{
     text-shadow: 1px 1px 1px #0A0446;
     font-weight: bolder;
-    padding: 2em 0 0;
+    margin-top: 5%;  
     font-stretch: extra-expanded;
     font-size: 1.5em; 
 
@@ -113,6 +112,11 @@ main h2{
 }
 .heroblock{
     position: relative;
+    margin-top: 5%; 
+}
+.heroimage {
+    z-index: 3;
+    width: 100%; 
 }
 .gallerygrid{
     display: grid;
@@ -141,14 +145,46 @@ figure > img{
     line-height: 1.5em;
     font-size: .75em;
 }
-.heroimage {
-    margin: 5% auto;
-    z-index: 3;
-    width: 100%; 
+/*------------Town Data---------------*/
+
+#townfactscontainer{
+    display:grid;
+    grid-gap: 1.25em;
+    grid-template-columns: 1fr;
+    margin-top: 5%; 
+    align-items: center;  
 }
+#townfactscontainer div{
+    border: rgb(71, 71, 71) solid .075em;
+    padding: .75em;
+    background-color: #BEBEC4;
+}
+#townfactscontainer article{
+    box-shadow: 5px 10px 40px #777;
+    padding-top: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    align-content: flex-end;
+}
+#townfactscontainer img{
+    max-width: 100%;
+}
+#townfactscontainer.h2{
+    padding: 2em;
+}
+#townfactscontainer .motto{
+    font-style: italic; 
+    font-weight: bold;
+}
+#townfactscontainer .towndatalabel{
+    font-weight: bold;
+}
+/*------------Five Day Forecast---------------*/
 .fivedayforecast {
-    display: none; 
+    display: none;
 }
+/*------------Article---------------*/
 .muttonbusting {
     text-align: left;
     border: .5px #777;
@@ -156,7 +192,7 @@ figure > img{
     padding: 3em 2em;
     position: relative; 
     display: block;
-    margin: 5% auto;
+    margin-top: 5%;
 }
 .muttonbusting h2{
     padding: 0; 
@@ -168,8 +204,19 @@ figure > img{
     margin: .5em auto;
     padding: 0em .5em;
 }
+/*-------------Events----------------*/
+.townevents{
+    margin-top: 5%;
+    margin-bottom: 0; 
+}
+#towneventscontainer h3{
+    color: black;
+    line-height: 1.25em; 
+    font-weight: lighter; 
+}
+/*------------Footer Section---------------*/
 .footersection{
-    margin: 0 auto;
+    margin-top: 5%;
     position: relative;
     background:#2C247F;
     padding: 2em 3em;
@@ -204,6 +251,7 @@ figure > img{
 .sociallinks img{
     padding-right: .75em; 
 }
+/*------------Footer Bar---------------*/
 .footerbar{
     display: block;
     width: 100%;
@@ -292,47 +340,3 @@ form label.top input:required:valid{
     margin-top: 8rem; 
 }
 
-/*------------Town Data---------------*/
-
-#townfactscontainer{
-    display:grid;
-    grid-gap: 1.25em;
-    grid-template-columns: 1fr;
-    padding: 2em 0;
-    align-items: center;  
-}
-#townfactscontainer div{
-    border: rgb(71, 71, 71) solid .075em;
-    padding: .75em;
-    background-color: #BEBEC4;
-}
-#townfactscontainer article{
-    box-shadow: 5px 10px 40px #777;
-    padding-top: 2em;
-    background-color: white;
-    display: flex;
-    flex-direction: column; 
-    align-content: flex-end;
-}
-#townfactscontainer img{
-    max-width: 100%;
-}
-#townfactscontainer.h2{
-    padding: 2em;
-}
-#townfactscontainer .motto{
-    font-style: italic; 
-    font-weight: bold;
-}
-#townfactscontainer .towndatalabel{
-    font-weight: bold;
-}
-/*-------------Events----------------*/
-#towneventscontainer h3{
-    color: black;
-    line-height: 1.25em; 
-    font-weight: lighter; 
-}
-.townevents{
-    margin: 5% auto; 
-}
