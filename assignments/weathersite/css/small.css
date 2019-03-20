@@ -223,10 +223,6 @@ figure > img{
     display: block;
     clear: both;
 }
-.footerbar a{
-    color: #fff;
-    text-decoration: none;
-}
 .footersection iframe{
     max-width: 80%;
     margin: 0 auto;
@@ -259,6 +255,14 @@ figure > img{
     background:#0A0446;
     color: #fff;
     padding: 1em 0;
+}
+.footerbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.footerbar a:visited{
+    color: #BEBEC4;
+    text-decoration: none; 
 }
 /*---------------Storm Center-------------------*/
 form fieldset{
