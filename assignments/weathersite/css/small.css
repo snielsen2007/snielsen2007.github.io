@@ -117,6 +117,9 @@ main h2{
     z-index: 3;
     width: 100%; 
 }
+.gallerycontainer{
+    margin-top:5%; 
+}
 .gallerygrid{
     display: grid;
 }
@@ -261,7 +264,7 @@ figure > img{
     text-decoration: none;
 }
 .footerbar a:visited{
-    color: #BEBEC4;
+    color: #777;
     text-decoration: none; 
 }
 /*---------------Storm Center-------------------*/
