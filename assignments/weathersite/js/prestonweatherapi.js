@@ -15,10 +15,3 @@ weatherRequest.onload = function () {
     let windchill = callWindChill();
     return windchill; 
 }
-
-/*let townName = document.getElementById("pageheader").innerHTML;
-if townName = 'Preston'
-    apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=be51ac7443b3bdad44d5779b4d1a2133'
-if townName = 'Fish Haven'
-    apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=be51ac7443b3bdad44d5779b4d1a2133'
-    */
