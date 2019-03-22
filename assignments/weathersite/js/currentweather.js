@@ -18,12 +18,12 @@ weatherRequest.send();
 weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     let desc = weatherData.weather[0].description;
-    console.log(weatherData);
     document.getElementById('descriptionvalue').innerHTML = desc;
     document.getElementById('temperaturevalue').innerHTML = weatherData.main.temp_max;
     document.getElementById('humidityvalue').innerHTML = weatherData.main.humidity;
     document.getElementById('windspeedvalue').innerHTML = weatherData.wind.speed;
     //trigger windchill function
-    let windchill = callWindChill();
-    return windchill;
+    return callWindChill();
+    /*let windchill = callWindChill();
+    return windchill;*/
 }
