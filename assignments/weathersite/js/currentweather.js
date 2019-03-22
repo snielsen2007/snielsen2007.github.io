@@ -23,5 +23,5 @@ weatherRequest.onload = function () {
     document.getElementById('humidityvalue').innerHTML = weatherData.main.humidity;
     document.getElementById('windspeedvalue').innerHTML = weatherData.wind.speed;
     //trigger windchill function
-    callWindChill();
+    return getWindChill();
 }
