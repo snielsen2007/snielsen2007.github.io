@@ -5,12 +5,13 @@ switch (townPage) {
         townId = '5604473';
         break;
     case "Fish Haven":
-        townID = '5585000';
+        townId = '5585000';
         break;
     case "Soda Springs":
-        townID = '5678757';
+        townId = '5678757';
 }
-apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id='+townID+'&units=imperial&APPID=be51ac7443b3bdad44d5779b4d1a2133';
+
+apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id='+townId+'&units=imperial&APPID=be51ac7443b3bdad44d5779b4d1a2133';
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
