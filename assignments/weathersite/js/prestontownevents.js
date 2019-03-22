@@ -27,9 +27,9 @@ request.onload = function () {
                 eventItem++;
             //create HTML content on the fly
             let myArticle = document.createElement('article');
-            let myH3 = document.createElement('h3');
-            myH3.textContent = event;
-            myArticle.appendChild(myH3);
+            let myH4 = document.createElement('h4');
+            myH4.textContent = event;
+            myArticle.appendChild(myH4);
             townevents.appendChild(myArticle);
   
             }

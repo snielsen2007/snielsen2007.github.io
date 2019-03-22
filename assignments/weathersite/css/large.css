@@ -34,8 +34,6 @@ nav li {
 figure:hover{
     box-shadow: 0 0 .5em rgb(99, 99, 99);
 }
-#townfactscontainer .motto{
+.townfacts .motto{
     height: 2.5em; 
-    font-size: 1em;
-}
 }

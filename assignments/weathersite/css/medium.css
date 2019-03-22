@@ -3,8 +3,11 @@
     grid-template-columns: 1fr 1fr;
 }
 .headertext .motto{
-    font-size: 1.5em;
     line-height: 1.25em; 
+}
+.townfacts .motto{
+    height: 3em; 
+    font-size: .8em;
 }
 header img{
     max-width: 100px; 
@@ -61,12 +64,8 @@ main, footer{
     padding: 0; 
 }
 /*------------Town Data---------------*/
-#townfactscontainer{
+.townfacts{
     grid-template-columns: 1fr 1fr 1fr;
     align-content: end;
-}
-#townfactscontainer .motto{
-    height: 5em; 
-    font-size: .8em;
 }
 }

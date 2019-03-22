@@ -18,16 +18,17 @@ header img{
     max-width: 200px; 
     padding-top: 1.5em;
 }
-header .motto{
+.motto{
     font-style: italic;
-    font-size: .75em; 
+    font-weight: bold;
+    padding: 0 1em; 
 }
 nav {
 	max-width: 550px;
 	margin: auto;
 	background-color: #0A0446;
 	text-align: center;
-	box-shadow: 0px 3px 3px #777;
+	box-shadow: 0 3px 3px #777;
 	padding: 0;
     overflow: hidden;
     font-family:'Roboto', sans-serif;
@@ -56,7 +57,6 @@ nav a:hover {
 	background-color: #B7A41F;
     color: #0A0446;
     font-weight: bolder;
-    justify-content: stretch; 
 }
 .active {
     background-color: #B7A41F;
@@ -78,15 +78,18 @@ h2 {
     color: #0A0446; 
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
-    /*display: flex; 
-    flex-flow: row wrap;
-    justify-content: center;*/
+    margin: 0; 
 }
 h3 {
     font-size: 1.25em;
     color: #fff; 
     font-family: 'Roboto', sans-serif;
     line-height: .5em;
+}
+h4{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em; 
 }
 pre {
   display: block;
@@ -103,11 +106,6 @@ main{
     margin-top: 5%;  
     font-stretch: extra-expanded;
     font-size: 1.5em; 
-
-}
-main h2{
-    margin: 0 auto; 
-   /* display: inline-block;*/
 }
 .heroblock{
     position: relative;
@@ -143,25 +141,24 @@ figure > img{
 .weatherdetails {
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: .15em; 
+    grid-column-gap: .15em;
     line-height: 1.5em;
     font-size: .75em;
 }
 /*------------Town Data---------------*/
-
-#townfactscontainer{
+.townfacts{
     display:grid;
     grid-gap: 1.25em;
     grid-template-columns: 1fr;
     margin-top: 5%; 
     align-items: center;  
 }
-#townfactscontainer div{
+.townfacts div{
     border: rgb(71, 71, 71) solid .075em;
     padding: .75em;
     background-color: #BEBEC4;
 }
-#townfactscontainer article{
+.townfacts article{
     box-shadow: 5px 10px 40px #777;
     padding-top: 2em;
     background-color: white;
@@ -169,17 +166,10 @@ figure > img{
     flex-direction: column; 
     align-content: flex-end;
 }
-#townfactscontainer img{
+.townfacts img{
     max-width: 100%;
 }
-#townfactscontainer.h2{
-    padding: 2em;
-}
-#townfactscontainer .motto{
-    font-style: italic; 
-    font-weight: bold;
-}
-#townfactscontainer .towndatalabel{
+.towndatalabel{
     font-weight: bold;
 }
 /*------------Five Day Forecast---------------*/
@@ -196,26 +186,17 @@ figure > img{
     display: block;
     margin-top: 5%;
 }
-.muttonbusting h2{
-    padding: 0; 
-    margin: 0 auto; 
-}
 .muttonbustin-image{
     width: 80%;
     max-width: 350px;
     margin: .5em auto;
-    padding: 0em .5em;
 }
 /*-------------Events----------------*/
 .townevents{
     margin-top: 5%;
     margin-bottom: 0; 
 }
-#towneventscontainer h3{
-    color: black;
-    line-height: 1.25em; 
-    font-weight: lighter; 
-}
+
 /*------------Footer Section---------------*/
 .footersection{
     margin-top: 5%;
@@ -241,11 +222,6 @@ figure > img{
     line-height: 1.25em;
     padding-left: 0;
     padding-bottom: 1.5em;
-}
-.contactinfo h4{
-    padding: 0;
-    margin: 0;
-    line-height: 1.25em; 
 }
 .sociallinks img{
     padding-right: .75em; 
@@ -296,14 +272,14 @@ form label.top input, form label.top select, form label.top textarea{
     color: #555;
     width: 100%;
     max-width: 18rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: lightgrey;
 }
 .rangecontainer{
     display: flex; 
     flex-direction: row;
     align-items: flex-end; 
 }
-#ratingvalue{
+.ratingvaluefont{
     font-size: 1.25em;
     color:  #2C247F; 
 }
