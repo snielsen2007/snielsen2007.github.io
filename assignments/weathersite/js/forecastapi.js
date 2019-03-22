@@ -1,4 +1,4 @@
-let townPage = document.getElementById('pagetitle').innerHTML;
+//let townPage = document.getElementById('pagetitle').innerHTML;
 switch (townPage) {
     case 'Fish Haven':
         townPage = 'Bear Lake County';
