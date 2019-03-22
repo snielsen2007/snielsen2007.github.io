@@ -11,7 +11,6 @@ switch (townPage) {
         townID = '5678757';
 }
 apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id='+townID+'&units=imperial&APPID=be51ac7443b3bdad44d5779b4d1a2133';
-apiURLstring = '';
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
