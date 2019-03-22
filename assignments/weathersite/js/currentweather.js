@@ -11,13 +11,8 @@ weatherRequest.onload = function () {
             townPage = "Bear Lake County";
             break; 
     }
-    console.log(weatherData);
-    console.log(townPage); 
-
-    for (let i = 0; i < weatherData.list.length; i++)
-        if (weatherData.list[i].name = "Bear Lake County")
+    for (let i = 0; i < weatherData.list.length; i++) {
         if (townPage = weatherData.list[i].name) {
-
             let desc = weatherData.list[i].weather[0].description;
             document.getElementById('descriptionvalue').innerHTML = desc;
             document.getElementById('temperaturevalue').innerHTML = weatherData.list[i].main.temp_max;
@@ -27,4 +22,5 @@ weatherRequest.onload = function () {
             let windchill = callWindChill();
             return windchill;
         }
+    }
 }

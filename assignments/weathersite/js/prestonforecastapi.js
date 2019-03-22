@@ -35,10 +35,3 @@ forecastRequest.onload = function () {
     
     
 }
-
-//document.getElementById('cc-temp').innerHTML = forecastData.main.temp;
-//let icon = "http://openweathermap.org/img/w/" + forecastData.list[0].icon + ".png"
-//let desc = forecastData.weather[0].description;
-
-//document.getElementById('cc-img').setAttribute('src', icon);
-//document.getElementById('cc-img').setAttribute('alt', desc);
