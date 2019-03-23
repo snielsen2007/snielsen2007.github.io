@@ -49,6 +49,7 @@ main, footer{
 .articleimage{
     float: right;
     padding: 0em .5em 1em .5em;
+    margin: .5em; 
 }
 .footersection{
     display: block;
