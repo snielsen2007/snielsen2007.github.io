@@ -177,7 +177,7 @@ figure > img{
     display: none;
 }
 /*------------Article---------------*/
-.muttonbusting {
+.articlecontainer {
     text-align: left;
     border: .5px #777;
     background: rgb(211, 210, 210);
@@ -186,7 +186,7 @@ figure > img{
     display: block;
     margin-top: 5%;
 }
-.muttonbustin-image{
+.articleimage{
     width: 80%;
     max-width: 350px;
     margin: .5em auto;
