@@ -39,9 +39,6 @@ nav a:hover {
 .weatherdetails {
     font-size: 1.25em;
 }
-article image {
-    float: right; 
-}
 main, footer{
     max-width: 960px; 
     margin: 0 auto;
