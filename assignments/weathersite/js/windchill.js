@@ -11,14 +11,11 @@ function windChill(tempF, speed) {
     //return result
     return wc;
 }
-
 function getWindChill() {
     let tempF = parseFloat(document.getElementById('temperaturevalue').innerHTML);
     let speed = parseFloat(document.getElementById('windspeedvalue').innerHTML);
     let result = windChill(tempF, speed);
-    document.getElementById('windchillvalue').innerHTML = result.toFixed(2);
-    //console.log(tempF);
-    //console.log(speed);           
+    document.getElementById('windchillvalue').innerHTML = result.toFixed(2);        
     return result;
 }
 

@@ -1,15 +1,4 @@
 let forecastRequest = new XMLHttpRequest();
-/*let townPage = document.getElementById("pagetitle").innerHTML;
-switch (townPage) {
-    case "Preston":
-        townId = '5604473';
-        break;
-    case "Fish Haven":
-        townId = '5585000';
-        break;
-    case "Soda Springs":
-        townId = '5678757';
-}*/
 apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=' + townId + '&units=imperial&APPID=be51ac7443b3bdad44d5779b4d1a2133';
 
 forecastRequest.open('Get', apiURLstring, true);

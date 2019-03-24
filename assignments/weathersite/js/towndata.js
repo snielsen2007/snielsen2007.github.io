@@ -41,8 +41,6 @@ request.onload = function () {
             let linkname = link.toLowerCase();   // this makes it all lowercase
 
 
-
-
             myH2.textContent = townList[i].name;
             myPara1.textContent = townList[i].motto;
             mySpan2a.textContent = 'Year Founded: ';
@@ -58,8 +56,6 @@ request.onload = function () {
             mySpan2a.setAttribute('class', 'towndatalabel');
             mySpan3a.setAttribute('class', 'towndatalabel');
             mySpan4a.setAttribute('class', 'towndatalabel');
-
-
 
             myArticle.appendChild(myH2);
             myArticle.appendChild(myPara1);
