@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title> Inn & Suites | Book Your Room Directly With Temple Inn & Suites</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browse Temple Inn & Suites' portfolio of accomodations.  Make your temple experience special by taking advantage of our ammenities">
+    <link href="https://fonts.googleapis.com/css?family=Adamina|Alegreya|Alegreya+Sans|Alex+Brush" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+    <!--<link rel="stylesheet" href="css/minified.css">-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-75px.png" alt="logo">
+        <div class="headertext">
+            <h1>Temple Inn & Suites</h1>
+        </div>
+        <div class="calltoaction">
+        <a href="#"><button type = "button">Book Your Stay</button></a>
+        </div>
+    </header>
+    <nav>
+        <ul class="site-navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html" class="active dropdown">Home</a></li>
+            <li><a href="#" class="dropdown">Reservations</a></li>
+            <li><a href="#" class="dropdown">Temples</a></li>
+            <li><a href="#" class="dropdown">Services</a></li>
+            <li><a href="#" class="dropdown">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="herocontainer">
+            <img src="images/kansascitytemple-960px.jpg" sizes="100vw"
+                alt="The Kansas City Temple across a meadow with blue sky and white clouds"
+                class="heroimage"
+                srcset="images/kansascitytemple-550px.jpg 500w, images/kansascitytemple-960px 960w">
+        </div>
+        <div class="featuredarticles"></div>
+        <article class="articlecontainer">
+            <h2>Is your soil ready for planting after last year's drought?</h2>
+            <pre>Sarah Nielsen</pre>
+            <img src="images/handsoil600px.jpg" alt="ground and hand feeling soil" class="articleimage" sizes="80vw"
+                srcset="images/handsoil600px.jpg 550w, images/handsoil370px.jpg 700w, images/handsoil600px.jpg 960w">
+            <p><p>Don't underestimate the Force. All right. Well, take care of yourself, Han. I guess that's what you're best at, ain't
+                it? You mean it controls your actions? You don't believe in the Force, do you? Look, I can take you as far as
+                Anchorhead. You can get a transport there to Mos Eisley or wherever you're going.</p>
+            <p>I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. I'm surprised you had
+                the courage to take the responsibility yourself. Hokey religions and ancient weapons are no match for a good blaster
+                at your side, kid.</p>
+            </p>
+            <small>
+                <a href="#" class=readmore>Read More</a>
+            </small>
+        </article>
+    </main>
+    <footer>
+        <div class="footersection">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549158624922"
+                style="border:0" allowfullscreen></iframe>
+            <!--without this my webpage would be 300kb less-->
+            <div class="contactinfo">
+                <h4>What The Weather - Idaho</h4>
+                <ul>
+                    <li>123 N 5th St</li>
+                    <li>Boise, ID 83245</li>
+                    <li>&phone; 555-555-555</li>
+                    <li>&#9993; whattheweatheridaho@wtw.com</li>
+                </ul>
+            </div>
+            <div class="sociallinks">
+                <a href="#"><img class="socialicon" src="images/social-icon-facebook.png" alt="facebook link"></a>
+                <a href="#"><img class="socialicon" src="images/social-icon-twitter.png" alt="twitter link"></a>
+                <a href="#"><img class="socialicon" src="images/social-icon-intagram.png" alt="instagram link"></a>
+            </div>
+        </div>
+        <div class="footerbar">
+            <p>&copy;2019 What The Weather | Events and Weather |<a
+                    href="https://snielsen2007.github.io/assignments/weathersite/attributions.html"> Attributions </a>|
+                Sarah Nielsen </p>
+            <p><span id="currentdate">today's date:</span></p>
+        </div>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/togglemenu.js"></script>
+    <script src="js/towndata.js"></script>
+</body>
+
+</html>
