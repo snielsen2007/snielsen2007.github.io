@@ -13,24 +13,28 @@
 </head>
 <body>
     <header>
-        <img src="images/logo-30px.png" alt="logo">
-        <div class="headertext">
-            <h1>Temple Inn & Suites</h1>
+        <div class=logotextcontainer>
+            <img src="images/logo-30px.png" alt="logo">
+            <div class="headertext">
+                <h1>Temple Inn & Suites</h1>
+            </div>
         </div>
         <div class="calltoaction">
         <a href="#"><button type = "button">Book Your Stay</button></a>
         </div>
+        <nav>
+            <ul class="site-navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html" class="active dropdown">Home</a>
+                </li>
+                <li><a href="#" class="dropdown">Reservations</a></li>
+                <li><a href="#" class="dropdown">Temples</a></li>
+                <li><a href="#" class="dropdown">Services</a></li>
+                <li><a href="#" class="dropdown">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="site-navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html" class="active dropdown">Home</a></li>
-            <li><a href="#" class="dropdown">Reservations</a></li>
-            <li><a href="#" class="dropdown">Temples</a></li>
-            <li><a href="#" class="dropdown">Services</a></li>
-            <li><a href="#" class="dropdown">Contact</a></li>
-        </ul>
-    </nav>
+    
     <main>
         <div class="herocontainer">
             <img src="temple-inn-and-suites/images/kansascitytemple-960px.jpg" sizes="100vw"
