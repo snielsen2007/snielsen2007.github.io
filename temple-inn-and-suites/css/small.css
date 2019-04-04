@@ -15,19 +15,20 @@ header {
 }
 .logotextcontainer{
     display: grid;
-    grid-column: 1/11;
+    grid-column: 1/12;
     grid-row: 2; 
+    margin: 1em; 
 }
 header .headertext{
-    grid-column: 3 / span 8;
-    grid-row: 3;
+    grid-column: 3 / span 9;
+    grid-row: 2;
     align-self: start;
     justify-self: end;
     padding-left: .3em; 
 }
 header img{ 
     grid-column: 1;
-    grid-row: 3; 
+    grid-row: 2; 
     align-self: end;
     padding-bottom: .2em; 
 }
@@ -66,7 +67,7 @@ nav {
 nav a {
 	padding: .5em;
 	text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #555B6E; 
 }
 .dropdown {
@@ -122,19 +123,19 @@ pre {
 main{ 
     margin: 0 auto;
 }
-.pageheader{
-    text-shadow: 1px 1px 1px #0A0446;
-    font-weight: bolder;
-    margin-top: 5%;  
-    font-stretch: extra-expanded;
-    font-size: 1.5em; 
+.herocontainer{
+    position: absolute;
+    margin-bottom: 5%;
+    clear: both; 
 }
-.heroblock{
+.calltoactioncontainer{
+    z-index: 1;
     position: relative;
-    margin-top: 5%; 
+    justify-content: center;
+    padding: 5% 20%;
+    clear: both;   
 }
 .heroimage {
-    z-index: 3;
     width: 100%; 
 }
 .gallerycontainer{
