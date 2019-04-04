@@ -1,0 +1,332 @@
+body { 
+    background-color: #fff;
+    text-align: center;
+}
+header {
+    margin: .5em 0;
+    border: 1px solid #fff;
+    line-height: 1em;
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+header .headertext{
+    grid-column: 2 / span 2;
+}
+header img{
+   /* width: 25%;
+    max-width: 200px;*/ 
+    margin-top: 1.5em;
+}
+header .calltoaction{
+    margin-top: 1.5em;
+    grid-column: col / span gutter 5;
+}
+.motto{
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 1em; 
+}
+nav {
+	max-width: 550px;
+	margin: auto;
+	background-color: #555B6E;
+	text-align: center;
+	box-shadow: 0 3px 3px #777;
+	padding: 0;
+    overflow: hidden;
+    font-family:'Roboto', sans-serif;
+    list-style-type: none;
+
+}
+.site-navigation {
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+}
+nav a {
+	color: #fff;
+	padding: .5em;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+.dropdown {
+    display: none;    
+}
+.responsive .dropdown {
+    display: block; 
+}
+nav a:hover {
+	background-color: #B7A41F;
+    color: #0A0446;
+    font-weight: bolder;
+}
+.active {
+    background-color: #B7A41F;
+    color: #0A0446;
+    font-weight: bolder;
+}
+nav li {
+    display: block;
+    padding: 0 .75em
+}
+h1 {
+    font-family: 'Adamina Regular';
+    font-size: 1.5em;
+    color: #333333;
+    line-height: 1.25em; 
+}
+h2 {
+    font-size: 1.25em;
+    color: #0A0446; 
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    margin: 0; 
+}
+h3 {
+    font-size: 1.25em;
+    color: #fff; 
+    font-family: 'Roboto', sans-serif;
+    line-height: .5em;
+}
+h4{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em; 
+}
+pre {
+  display: block;
+  font-family: 'Roboto';
+  white-space: pre;
+  margin: 1em 0;
+}
+main{ 
+    margin: 0 auto;
+}
+.pageheader{
+    text-shadow: 1px 1px 1px #0A0446;
+    font-weight: bolder;
+    margin-top: 5%;  
+    font-stretch: extra-expanded;
+    font-size: 1.5em; 
+}
+.heroblock{
+    position: relative;
+    margin-top: 5%; 
+}
+.heroimage {
+    z-index: 3;
+    width: 100%; 
+}
+.gallerycontainer{
+    margin-top:5%; 
+}
+.gallerygrid{
+    display: grid;
+}
+figure > img{
+    width: 100%; 
+}
+.weathersummary {
+    display: inline-block;
+    z-index: 1;
+    vertical-align: middle;
+    background: radial-gradient(#0A0446, #2C247F);
+    border: .25px solid #777;
+    padding: 0 .75em 1em;
+    color: #fff;
+    box-shadow: 0 0 40px #444; 
+    top: 10px; 
+    left: 10px; 
+    margin: 5% auto;
+    position: absolute; 
+}
+.weatherdetails {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .15em;
+    line-height: 1.5em;
+    font-size: .75em;
+}
+/*------------Town Data---------------*/
+.townfacts{
+    display:grid;
+    grid-gap: 1.25em;
+    grid-template-columns: 1fr;
+    margin-top: 5%; 
+    align-items: center;  
+}
+.townfacts div{
+    border: rgb(71, 71, 71) solid .075em;
+    padding: .75em;
+    background-color: #BEBEC4;
+}
+.townfacts article{
+    box-shadow: 5px 10px 40px #777;
+    padding-top: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    align-content: flex-end;
+}
+.townfacts img{
+    max-width: 100%;
+}
+.towndatalabel{
+    font-weight: bold;
+}
+/*------------Five Day Forecast---------------*/
+.fivedayforecast {
+    display: none;
+}
+/*------------Article---------------*/
+.articlecontainer {
+    text-align: left;
+    border: .5px #777;
+    background: rgb(211, 210, 210);
+    padding: 3em 2em;
+    position: relative; 
+    display: block;
+    margin-top: 5%;
+}
+.articleimage{
+    width: 80%;
+    max-width: 350px;
+    margin: .5em auto;
+}
+/*-------------Events----------------*/
+.townevents{
+    margin-top: 5%;
+    margin-bottom: 0; 
+}
+
+/*------------Footer Section---------------*/
+.footersection{
+    margin-top: 5%;
+    position: relative;
+    background:#7C99B4;
+    padding: 2em 3em;
+    color: #fff;
+    display: block;
+    clear: both;
+}
+.footersection iframe{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0; 
+}
+.contactinfo{
+    margin-right: 3%;
+    padding-right: 1%; 
+}
+.contactinfo ul{
+    list-style-type: none;
+    margin: 0;
+    line-height: 1.25em;
+    padding-left: 0;
+    padding-bottom: 1.5em;
+}
+.sociallinks img{
+    padding-right: .75em; 
+}
+/*------------Footer Bar---------------*/
+.footerbar{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background:#7C99B4;
+    color: #fff;
+    padding: 1em 0;
+}
+.footerbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.footerbar a:visited{
+    color: #777;
+    text-decoration: none; 
+}
+/*---------------Storm Center-------------------*/
+form fieldset{
+    margin: 2rem .25rem;
+    border: 1px solid #2C247F;
+    border-radius: 10px;
+    padding: .5rem 2%; 
+    text-align: left; 
+}
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: bold; 
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem; 
+    color: black;
+    font-size: .9rem;
+}
+form label.top input, form label.top select, form label.top textarea{
+    display: block;
+    font-size: 1.25em;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 18rem;
+    background-color: lightgrey;
+}
+.rangecontainer{
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-end; 
+}
+.ratingvaluefont{
+    font-size: 1.25em;
+    color:  #2C247F; 
+}
+.dangerlabel{
+    padding-bottom: 0;
+    padding-top: 2em;
+    margin-left: .75em; 
+}
+.radiocontainer{
+    padding: 0; 
+    margin-left: 1em; 
+}
+.radiocontainer input{
+    margin-right: .75em;
+}
+.sbs{
+    margin-top: .4em;
+    margin-left: .4em; 
+    width: auto;
+    padding: .5em .5em;
+    display: block; 
+}
+form input.submitBtn{
+    border: none;
+    background-color: #2C247F;
+    border-radius: 1rem;
+    color: white; 
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%; 
+    width: 96%;
+    max-width: 18rem;
+}
+form input.submitBtn:hover{
+    background-color: #0A0446; 
+}
+form label.top input:required{
+    border: red solid 1px;
+}
+form label.top input:required:valid{
+    border: black solid 1px;
+}
+.successmessage{
+    margin-bottom: 25rem;
+    margin-top: 8rem; 
+}
+
