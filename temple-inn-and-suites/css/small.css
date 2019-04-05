@@ -240,8 +240,38 @@ figure > img{
     background: #fff;
 }
 .articlecontainer4{
-    background: #333333; 
+    background: #393D42; 
 }
+/*----sample---*/
+.listing li {
+  border: 1px solid #555B6E;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #C3C5CC;
+}
+.listing .cta {
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  max-width: 100%; 
+}
+.listing .body {
+  padding: 10px;
+}
+.listing {
+  list-style: none;
+  display: grid;
+  grid-gap: 0;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  padding-inline-start: 0;
+
+}
+.listing .wide {
+  grid-column-end: span 2;
+}
+
 /*-------------Events----------------*/
 .townevents{
     margin-top: 5%;
