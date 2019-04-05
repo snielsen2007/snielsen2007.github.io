@@ -1,0 +1,9 @@
+@media only screen and (min-width: 460px){
+.featuredarticles{
+    grid-template-columns: 1fr 1fr;
+}
+.featuretemplegrid{
+    grid-template-columns: 2fr 1fr; 
+}
+.featuretitle{  
+}

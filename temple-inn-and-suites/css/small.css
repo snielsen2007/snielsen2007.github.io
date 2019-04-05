@@ -122,7 +122,6 @@ button {
 }
 .heroimagecontainer{
     grid-column: 1/span 4; 
-    max-width: 600px; 
 }
 .calltoactioncontainer{
     position: absolute;
@@ -196,20 +195,52 @@ figure > img{
     display: none;
 }
 /*------------Article---------------*/
+.featuretemplegrid{
+    display:grid;
+    align-items: center;
+}
+.featuretitle{
+    background-color: #555B6E;
+    grid-column: 1/ span 2;  
+}
+.featurefacts{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: .5em;
+    grid-column: 1;  
+}
+.featurefacts .label{
+    text-align: right; 
+}
+.featurefacts .value{
+    text-align: left; 
+}
+.featureimage{
+    align-self: center; 
+}
 
-.articlecontainer {
+.featuredarticles {
     text-align: left;
-    border: .5px #777;
-    background: #e8e8e8;
+    background: #fff;
     padding: 3em 2em;
     margin-top: 0;
     display: grid;
-    grid-gap: .5em;  
 }
 .articleimage{
-    width: 90%;
-    max-width: 350px;
-    margin: .5em auto;
+   align-self: center;
+   justify-self: center; 
+}
+.articlecontainer1{
+    background: #555B6E;
+}
+.articlecontainer2{
+    background: #e8e8e8;
+}
+.articlecontainer3{
+    background: #fff;
+}
+.articlecontainer4{
+    background: #333333; 
 }
 /*-------------Events----------------*/
 .townevents{
