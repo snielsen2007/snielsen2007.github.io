@@ -4,7 +4,6 @@ header, main, footer{
     max-width: 960px; 
     margin: 0 auto;
 }
-
 .newlocationcontainer{
     display: grid;
     grid-template-columns: 1fr 2fr

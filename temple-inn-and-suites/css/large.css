@@ -44,4 +44,14 @@ nav .dropdown{
 nav li:first-child {
     display: none;
 }
+nav a:hover {
+	background-color: #e9cb70;
+    color: #fff;
+    font-weight: bolder;
+}
+.active {
+    background-color: ##e9cb70;
+    color: #333333;
+    font-weight: bolder;
+}
 }
