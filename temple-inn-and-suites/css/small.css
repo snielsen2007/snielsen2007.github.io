@@ -2,8 +2,13 @@ body {
     background-color: #fff;
     text-align: center;
 }
+.call{
+    background: #393D42;
+    padding: .005em;
+    align-content: center; 
+}
 header {
-    margin: .5em 1em;
+    margin: 0em .5em;
     border: 1px solid #fff;
     padding-top: 2%;
     display: grid;
@@ -34,12 +39,13 @@ nav {
 	background-color: #e9cb70;
 	text-align: center;
     overflow: hidden;
-    font-family:'Roboto', sans-serif;
+    font-family:'Alegreya Sans';
     list-style-type: none;
     position: fixed;
     bottom: 5%;
     right: 3%;   
     padding: 0;
+    z-index: 1;
 }
 nav a {
     padding: .5em;
@@ -71,9 +77,9 @@ nav li {
 }
 h1 {
     font-family: 'Adamina Regular';
-    font-size: .9em;
+    font-size: .8em;
     color: #333333;
-    line-height: 1.5em; 
+    line-height: 1.2em; 
 }
 h2 {
     font-size: 1.25em;
@@ -81,12 +87,17 @@ h2 {
     font-family: 'Alegreya Sans';
     line-height: 1.5em;
     margin: 0;
+    text-shadow: .04em .04em #393D42;
+    letter-spacing: .015em; 
 }
 h3 {
     font-size: 1.25em;
-    color: #fff; 
-    font-family: 'Roboto', sans-serif;
-    line-height: .5em;
+    color: #7C99B4; 
+    font-family: 'Alegreya Sans Medium';
+    letter-spacing: .05em;
+    text-shadow: .001em .001em #000000;
+
+    
 }
 h4{
     padding: 0;
@@ -94,10 +105,12 @@ h4{
     line-height: 1.5em; 
 }
 pre {
-  display: block;
-  font-family: 'Roboto';
+  font-family: 'Alereya Sans SC';
   white-space: pre;
-  margin: 1em 0;
+  color: #fff;
+  font-size: .9em; 
+  text-align: left;
+  margin: 1em;  
 }
 button {
     background-color: transparent; 
@@ -132,15 +145,73 @@ button {
     border-color: #fff;
     color: #fff;  
 }
+.heroimage{
+    max-width: 100%; 
+}
+/*---newlocationc---*/
+
+.phillygrid{
+    display: grid;
+}
+.phillyexterior{
+    position: relative;
+    align-items: center; 
+    justify-items: center;
+}
+.phillyexterior img{
+    width: 100%; 
+}
+.phillyheadline{
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+.phillyfacts{
+    padding: 1em; 
+}
+.featurefacts{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: .5em;  
+}
+.featurefacts .label{
+    text-align: right;
+     
+}
+.featurefacts .value{
+    text-align: left; 
+}
 /*------------Gallery---------------*/
 .gallerycontainer{
     margin-top:5%; 
 }
 .gallerygrid{
     display: grid;
+    grid-gap: 0;
+    grid-row-gap: 0; 
+    grid-auto-flow: dense;
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    overflow: hidden; 
 }
 figure > img{
-    width: 100%; 
+    width: 100%;
+}
+.wide{
+    grid-column: span 2; 
+}
+.tall{
+    grid-row: span 2;
+    height: 100%; 
+}
+figure{
+    margin: 0; 
+}
+.background{
+    background-color: #e9cb70;
+}
+
+figcaption{
+    visibility: hidden; 
 }
 .weathersummary {
     display: inline-block;
@@ -195,7 +266,7 @@ figure > img{
     display: none;
 }
 /*------------Article---------------*/
-.featuretemplegrid{
+.featuretemplegrid .gallerygrid{
     display:grid;
     align-items: center;
 }
@@ -203,18 +274,7 @@ figure > img{
     background-color: #555B6E;
     grid-column: 1/ span 2;  
 }
-.featurefacts{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: .5em;
-    grid-column: 1;  
-}
-.featurefacts .label{
-    text-align: right; 
-}
-.featurefacts .value{
-    text-align: left; 
-}
+
 .featureimage{
     align-self: center; 
 }
@@ -242,7 +302,7 @@ figure > img{
 .articlecontainer4{
     background: #393D42; 
 }
-/*----sample---*/
+/*----Grid Tiles---*/
 .listing li {
   border: 1px solid #555B6E;
   border-radius: 5px;
@@ -268,8 +328,8 @@ figure > img{
   padding-inline-start: 0;
 
 }
-.listing .wide {
-  grid-column-end: span 2;
+.listing, .wide {
+  grid-column-end: span 3;
 }
 
 /*-------------Events----------------*/
