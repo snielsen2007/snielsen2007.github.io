@@ -3,7 +3,7 @@ let townfacts = document.querySelector('#templefactscontainer');
 let section = document.querySelector('section');
 //use an API called XMLHttpRequest --a JavaScript object that allows us to make network requests to retrieve resources from a server via JavaScript
 // store the URL of the JSON we want to retrieve in a variable
-let requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+let requestURL = 'https://snielsen2007.github.io/temple-inn-and-suites/json/templedata.json';
 //create a new request object instance from the XMLHttpRequest constructor, using the new keyword
 let request = new XMLHttpRequest();
 //open a new request using the open() method

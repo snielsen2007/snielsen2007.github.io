@@ -12,7 +12,11 @@
     --templepurple: #555B6E;
     --templeblue: #7C99B4;
     --templewhite: #e8e8e8;
-    --templegold: #E9cb70; 
+    --templegold: #E9cb70;
+    --transtemplegold: rgba(233, 203, 112, 0.3);
+    --transtemplepurple: rgba(85,91,110,0.3);
+    --transtempleblue: rgba(124,153,180,0.3);
+    --transtempleblack: rgba(0,0,5,.3); 
 
 }
 head{
@@ -198,21 +202,12 @@ nav a:hover{
     display: grid;
     grid-auto-flow: dense; 
     grid-gap: 2em;
-    max-width: 100%; 
+    max-width: 100%;
     background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");  
 }
+
 .templetitle{
-     background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");
-     min-height: 200px;
-}
-/*
-grid-template-areas:
-        'title title title'
-        2fr 3fr 2fr
-        3fr 2fr 3fr
-        2fr 3fr 2fr;
-.templetitle{
-    grid-area: title;
+     min-height: 400px;
 }
 /*---------------Temple Facts Grids------------------*/
 .factsgrid{
