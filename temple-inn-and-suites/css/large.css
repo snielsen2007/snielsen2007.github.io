@@ -5,7 +5,7 @@
 /*---------------Paragraph Styles------------------*/
 
 h1{
-    font-size: 1.25em;
+    font-size: 2em;
 }
 
 /*---------------Navigation------------------*/
@@ -13,6 +13,7 @@ nav{
     position: relative;
     background-color: transparent;
     grid-template-columns: repeat(6, 1fr);
+    align-content: center; 
 
 }
 .dropdown{
