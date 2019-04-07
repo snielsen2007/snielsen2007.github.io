@@ -44,12 +44,10 @@ nav {
     position: fixed;
     bottom: 5%;
     right: 3%;   
-    padding: 0;
     z-index: 2; 
 }
 .responsive nav{
-    height: 70%;
-    width: 30%; 
+    width: 50%; 
 }
 nav ul{
     justify-content: space-evenly;
@@ -70,7 +68,9 @@ nav a {
     display: grid;
     grid-template-rows: repeat(6, 3em);
     grid-template-columns: 100%; 
+    grid-gap: .2em; 
     font-size: 1.5em;
+    justify-items: center; 
     
 }
 nav li {
