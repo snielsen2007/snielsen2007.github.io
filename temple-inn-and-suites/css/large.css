@@ -1,13 +1,29 @@
 @media only screen and (min-width: 960px){
+/*---------------Paragraph Styles------------------*/
+h1 {
+    font-family: 'Adamina Regular';
+    font-size: .9em;
+    line-height: 1.25em;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 2em;
+    letter-spacing: .02em; 
+}
+h3 {
+    font-size: 1.25em;
+    letter-spacing: .05em;
+}
+
 .gallerygrid{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
 }
 header {
-    grid-template-columns: 2fr 5fr 2fr; 
+    grid-template-columns: 2fr 6fr 2fr; 
 }
 header .logotextcontainer{
-    grid-column: 1/3;
+    grid-column: 1;
     grid-row: 2;
 }
 nav{
@@ -50,8 +66,12 @@ nav a:hover {
     font-weight: bolder;
 }
 .active {
-    background-color: ##e9cb70;
+    background-color: #e9cb70;
     color: #333333;
     font-weight: bolder;
+}
+.herocontainer button{
+    font-size: 1.5em;
+    padding: .45em;
 }
 }

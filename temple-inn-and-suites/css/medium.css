@@ -4,6 +4,32 @@ header, main, footer{
     max-width: 960px; 
     margin: 0 auto;
 }
+nav{
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+    right: 0%;
+    grid-column: 5/6;
+    grid-row: 2;
+    height: 100%
+
+}
+header .calltoaction{
+    grid-column: 3/5;
+    grid-row: 2;  
+}
+.responsive .calltoaction{
+    grid-column:5;
+    grid-row: 2; 
+}
+.responsive .herocontainer{
+    grid-column: 1/5;
+    grid-row: 3; 
+}
+.responsive nav{
+    grid-column: 5/6;
+    grid-row: 3; 
+}
 .newlocationcontainer{
     display: grid;
     grid-template-columns: 1fr 2fr
@@ -12,6 +38,7 @@ header, main, footer{
     position: absolute;
     width: 100%;
     top: 10%;
+}
 .gallerygrid{
     grid-template-columns: 1fr 1fr;
 }
