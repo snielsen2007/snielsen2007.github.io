@@ -192,9 +192,49 @@ nav a:hover{
     color: #777;
     text-decoration: none; 
 }
-
+/*---------------Temples Grid layout------------------*/
+.templewrapper{
+    border: solid var(--templepurple);
+    display: grid;
+    grid-auto-flow: dense; 
+    grid-gap: 2em;
+    max-width: 100%;   
+}
+.templetitle{
+     background-image: url("snielsen2007.github.io\temple-inn-and-suites\potential-images\philadelphia-640x800px.jpg");
+}
+/*
+grid-template-areas:
+        'title title title'
+        2fr 3fr 2fr
+        3fr 2fr 3fr
+        2fr 3fr 2fr;
+.templetitle{
+    grid-area: title;
+}
+/*---------------Temple Facts Grids------------------*/
+.factsgrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: .5em;  
+}
+.factsgrid .label{
+    text-align: right;
+     
+}
+.factsgrid .value{
+    text-align: left; 
+}
+.factsgrid .no{
+    color: red;
+    font-weight: bolder; 
+}
+.factsgrid .yes{
+    color: green;
+    font-weight: bolder;  
+}
 /*---------------Templefacts------------------*/
-
+/*
 .templefacts{
     display:grid;
     grid-gap: 1.25em;
@@ -221,4 +261,5 @@ nav a:hover{
 .templedatalabel{
     font-weight: bold;
 }
+*/
 /*---------------ABCD------------------*/
