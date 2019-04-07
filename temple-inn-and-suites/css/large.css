@@ -42,8 +42,9 @@ header .calltoaction{
     align-self: center;
 }
 .site-navigation{
+    display: flex; 
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 nav li {
   padding: 10;
