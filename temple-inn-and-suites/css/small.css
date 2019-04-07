@@ -201,7 +201,7 @@ nav a:hover{
     max-width: 100%;   
 }
 .templetitle{
-     background-image: url("snielsen2007.github.io\temple-inn-and-suites\potential-images\philadelphia-640x800px.jpg");
+     background-image: url("/potential-images/philadelphia-640x800px.jpg");
 }
 /*
 grid-template-areas:
