@@ -1,4 +1,12 @@
 @media only screen and (min-width: 960px){
+*{
+    line-height: 1.25em; 
+}
+/*---------------Paragraph Styles------------------*/
+
+h1{
+    font-size: 1.25em;
+}
 
 /*---------------Navigation------------------*/
 nav{

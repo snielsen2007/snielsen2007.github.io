@@ -29,7 +29,7 @@ img{
 }
 /*---------------Paragraph Styles------------------*/
 h1{
-    font-size: 1.25em;
+    font-size: 1em;
     font-family: 'Oregano', cursive;
 }
 h2{
@@ -55,8 +55,9 @@ pre {
   color: #fff;
   font-size: .9em; 
   text-align: center;
-  margin: 1em;
-  background-color: var(--templeblack);  
+  margin: .5em;
+  background-color: var(--templeblack);
+  line-height: .5em;   
 }
 button{
     background-color: transparent; 
@@ -72,7 +73,7 @@ button{
 /*---------------HEADER------------------*/
 header{
     display: grid; 
-    grid-template-columns: 3fr repeat(6, 1fr) 3fr;
+    grid-template-columns: 3fr repeat(6, .25fr) 3fr;
     grid-row-gap: 1em;
     align-items: center;
     justify-items: center; 
@@ -81,18 +82,26 @@ header{
     grid-column:1/9;
     width: 100%;
     background-color: var(--templeblack);
+    display: inline-flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 .logoandcompany{
     display: flex;
     grid-column: 1;
-    grid-row: 2;  
+    grid-row: 2;
+    position: relative; 
 }
-.logoandcompany{
-    max-height:30px
+.logoandcompany img{
+    position: absolute; 
+    left: .07em; 
+    top: .1em;
+    z-index: -1; 
 }
 .headspacebutton{
     grid-column: 8;
-    grid-row: 2;  
+    grid-row: 2;
+    font-size: .8em; 
 /*---------------Navigation------------------*/
 }
 nav{
@@ -155,4 +164,30 @@ nav a:hover{
     color: #fff;  
 }
 
-
+/*---------------Footer------------------*/
+.footerbar{
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 1em;
+    background-color: var(--templeblue);
+    color: #fff;
+}
+.sociallinks{
+    grid-column: 4/9;
+    grid-row: 2; 
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end; 
+}
+.footerinfo{
+    grid-column: 2/12;
+    grid-row: 3; 
+    margin-bottom: 2em; 
+}
+.footerbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.footerbar a:visited{
+    color: #777;
+    text-decoration: none; 
