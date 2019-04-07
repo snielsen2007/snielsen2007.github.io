@@ -191,3 +191,34 @@ nav a:hover{
 .footerbar a:visited{
     color: #777;
     text-decoration: none; 
+}
+
+/*---------------Templefacts------------------*/
+
+.templefacts{
+    display:grid;
+    grid-gap: 1.25em;
+    grid-template-columns: 1fr;
+    margin-top: 5%; 
+    align-items: center;  
+}
+.templefacts div{
+    border: rgb(71, 71, 71) solid .075em;
+    padding: .75em;
+    background-color: #BEBEC4;
+}
+.templefacts article{
+    box-shadow: 5px 10px 40px #777;
+    padding-top: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    align-content: flex-end;
+}
+.templefacts img{
+    max-width: 100%;
+}
+.templedatalabel{
+    font-weight: bold;
+}
+/*---------------ABCD------------------*/
