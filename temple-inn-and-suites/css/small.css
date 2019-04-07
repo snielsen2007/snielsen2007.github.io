@@ -198,7 +198,8 @@ nav a:hover{
     display: grid;
     grid-auto-flow: dense; 
     grid-gap: 2em;
-    max-width: 100%;   
+    max-width: 100%; 
+    background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");  
 }
 .templetitle{
      background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");
