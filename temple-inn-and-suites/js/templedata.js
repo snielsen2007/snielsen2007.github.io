@@ -1,5 +1,5 @@
 //define the container to build within
-let closureschedule = document.querySelector('#templeclosureschedule');
+let closureschedule = document.querySelector('#templeclosureschedules');
 let section = document.querySelector('section');
 //use an API called XMLHttpRequest --a JavaScript object that allows us to make network requests to retrieve resources from a server via JavaScript
 // store the URL of the JSON we want to retrieve in a variable
@@ -18,22 +18,71 @@ request.send();
 request.onload = function () {
     let responsedata = request.response;
     let templeList = responsedata['temples'];
-    let templeTitle = document.getElementById('templetitle').innerHTML;
     for (let i = 0; i < templeList.length; i++) {
-        if (templeList[i].name == templeTitle) {
-            let closureList = templeList[i].templeclosureSchedule;
+        if (templeList[i].name == "St. Louis Missouri Temple") {
+            let closureList = templeList[i].templeClosureSchedule;
             let closureItem = 0;
             for (let j = 0; j < closureList.length; j++) {
                 let closure = closureList[closureItem];
                 closureItem++;
-        //create HTL content on the fly
+                //create HTL content on the fly
                 let myArticle = document.createElement('article');
                 let myPara = document.createElement('p');
-                myPara.textContent = closure; 
-                myArticle.appendChild('myPara');
+                myPara.textContent = closure;
+
+                myArticle.setAttribute = ("class", "STLclosuredate");
+                myArticle.appendChild(myPara);
                 closureschedule.appendChild(myArticle);
             }
         }
-    }
-}
+        else if (templeList[i].name == "Philadelphia Pennsylvania Temple") {
+            let closureList = templeList[i].templeClosureSchedule;
+            let closureItem = 0;
+            for (let j = 0; j < closureList.length; j++) {
+                let closure = closureList[closureItem];
+                closureItem++;
+                //create HTL content on the fly
+                //let myArticle = document.createElement('article');
+                let myPara = document.createElement('p');
+                myPara.textContent = closure;
 
+                myPara.setAttribute = ('class','PHLclosuredate');
+                //myArticle.appendChild(myPara);
+                closureschedule.appendChild(myPara);
+            }
+        }
+        else if (templeList[i].name == "Boise Idaho Temple") {
+            let closureList = templeList[i].templeClosureSchedule;
+            let closureItem = 0;
+            for (let j = 0; j < closureList.length; j++) {
+                let closure = closureList[closureItem];
+                closureItem++;
+                //create HTL content on the fly
+                let myArticle = document.createElement('article');
+                let myPara = document.createElement('p');
+                myPara.textContent = closure;
+
+                myArticle.setAttribute = ('class','BOIclosuredate');
+                myArticle.appendChild(myPara);
+                closureschedule.appendChild(myArticle);
+            }
+        }
+                else if (templeList[i].name == "Kansas City Missouri Temple ") {
+                let closureList = templeList[i].templeClosureSchedule;
+                let closureItem = 0;
+                for (let j = 0; j < closureList.length; j++) {
+                    let closure = closureList[closureItem];
+                    closureItem++;
+                    //create HTL content on the fly
+                    let myArticle = document.createElement('article');
+                    let myPara = document.createElement('p');
+                    myPara.textContent = closure;
+                    myArticle.setAttribute = ('class','KCMclosuredate');
+                    myArticle.appendChild(myPara);
+                    closureschedule.appendChild(myArticle);
+                }
+            }
+        }
+    }
+
+    //        if (templeList[i].name == "St. Louis Missouri Temple" || templeList[i].name == "Philadelphia Pennsylvania Temple" || templeList[i].name == "Boise Idaho Temple" || templeList[i].name == "Kansas City Missouri Temple") {

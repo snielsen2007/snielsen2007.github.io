@@ -197,17 +197,72 @@ nav a:hover{
     text-decoration: none; 
 }
 /*---------------Temples Grid layout------------------*/
-.templewrapper{
+.fourtemplesgrid{
+    display: grid; 
+    grid-template-areas:
+    "closures" "closures" "closures" "closures" 
+    "PHL" "PHL"
+    "PHL" "PHL"
+    "PHL" "PHL"
+    "PHL" "PHL"
+    "STL" "STL"
+    "STL" "STL"
+    "STL" "STL"
+    "STL" "STL"
+    "KCM" "KCM"
+    "KCM" "KCM"
+    "KCM" "KCM"
+    "KCM" "KCM"
+    "BOI" "BOI"
+    "BOI" "BOI"
+    "BOI" "BOI"
+    "BOI" "BOI";
+}
+.templewrapper .PHL{
+    grid-area: PHL;
+}
+.templewrapper .STL{
+    grid-area: STL; 
+}
+.templewrapper .KCM{
+    grid-area: KCM;
+}
+.templewrapper .BOI{
+    grid-area: BOI; 
+}
+.closuregrid{
+    grid-area: closures;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+     "PHLc" "STLc" "KCMc" "BOIc"
+}
+.closuregrid .PHLclosuredate{
+    grid-area: PHLc;
+    border: solid red; 
+}
+.closuregrid .STLclosuredate{
+    grid-area: STLc;
+}
+.closuregrid .KCMclosuredate{
+    grid-area: KCMc; 
+}
+.closuregrid .BOIclosuredate{
+    grid-area: BOIc;
+}
+
+
+/*.templewrapper{
     border: solid var(--templepurple);
     display: grid;
     grid-auto-flow: dense; 
     grid-gap: 2em;
     max-width: 100%;
 }
-
+*/
 .templetitle{
      min-height: 400px;
-    background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");  
+    background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");
 }
 /*---------------Temple Facts Grids------------------*/
 .factsgrid{
