@@ -2,12 +2,6 @@
   "temples" : [
   {
     "name": "Philadelphia Pennsylvania Temple",
-    "services": [
-        "Clothing rental available",
-        "No cafeteria available",
-        "No patron housing available",
-        "No distribution center nearby"
-    ]
     "templeClosureSchedule" : [
       "Thursday, 4 July 2019",
       "Monday, 16 September 2019 - Monday, 30 September 2019",
@@ -50,7 +44,7 @@
     "Thursday, 28 November 2019",
     "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
     ]
-  },
+  }
  ]
 }
 
