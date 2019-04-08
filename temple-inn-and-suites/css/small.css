@@ -200,11 +200,11 @@ nav a:hover{
 .fourtemplesgrid{
     display: grid; 
     grid-template-areas:
-    "closures" "closures" "closures" "closures" 
+    /*"closures" "closures" "closures" "closures" */
     "PHL" "PHL"
     "PHL" "PHL"
     "PHL" "PHL"
-    "PHL" "PHL"
+    "PHL" "PHL" 
     "STL" "STL"
     "STL" "STL"
     "STL" "STL"
@@ -216,10 +216,14 @@ nav a:hover{
     "BOI" "BOI"
     "BOI" "BOI"
     "BOI" "BOI"
-    "BOI" "BOI";
+    "BOI" "BOI"
 }
-.templewrapper .PHL{
+/*.templewrapper .PHL{
     grid-area: PHL;
+    display: grid;
+    grid-template-areas: 
+
+    "PHLc"
 }
 .templewrapper .STL{
     grid-area: STL; 
@@ -230,16 +234,16 @@ nav a:hover{
 .templewrapper .BOI{
     grid-area: BOI; 
 }
-.closuregrid{
+/*.closuregrid{
     grid-area: closures;
     display: grid;
     grid-gap: 1em;
     grid-template-areas: 
-     "PHLc" "STLc" "KCMc" "BOIc"
+     "PHLc" "STLc" "KCMc" "BOIc";
+ 
 }
 .closuregrid .PHLclosuredate{
     grid-area: PHLc;
-    border: solid red; 
 }
 .closuregrid .STLclosuredate{
     grid-area: STLc;
