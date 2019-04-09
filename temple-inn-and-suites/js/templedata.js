@@ -24,84 +24,41 @@ request.onload = function () {
     let templeList = responsedata['temples'];
     for (let i = 0; i < templeList.length; i++) {
         if (templeList[i].name == "St. Louis Missouri Temple") {
-            let myDiv = document.createElement('div');
-            let myH3 = document.createElement('h3');
-            myH3.textContent = 'Scheduled Closures';
-            myDiv.appendChild(myH3);
-            STLclosureschedule.appendChild(myDiv);
-            let closureList = templeList[i].templeClosureSchedule;
-            let closureItem = 0;
-            for (let j = 0; j < closureList.length; j++) {
-                let closure = closureList[closureItem];
-                closureItem++;
-                //create HTL content on the fly
-                
-                let myPara = document.createElement('p');
-                myPara.textContent = closure;
-                myDiv.setAttribute("class", "STLclosuredate");
-                myDiv.appendChild(myPara);
+            buildHTMLForTemple(STLclosureschedule,'STLclosuredate', templeList[i]);
 
-            }
         }
         else if (templeList[i].name == "Philadelphia Pennsylvania Temple") {
-            let myDiv = document.createElement('div');
-            let myH3 = document.createElement('h3');
-            myH3.textContent = 'Scheduled Closures';
-            myDiv.appendChild(myH3);
-            PHLclosureschedule.appendChild(myDiv);
-            let closureList = templeList[i].templeClosureSchedule;
-            let closureItem = 0;
-            for (let j = 0; j < closureList.length; j++) {
-                let closure = closureList[closureItem];
-                closureItem++;
-                //create HTL content on the fly
-                let myPara = document.createElement('p');                
-                myPara.textContent = closure;
-                myDiv.setAttribute('class','PHLclosuredate');
-                myDiv.appendChild(myPara);
-                
-            }
+            buildHTMLForTemple(PHLclosureschedule,'PHLclosuredate', templeList[i]);
         }
         else if (templeList[i].name == "Boise Idaho Temple") {
-            let myDiv = document.createElement('div');
-            let myH3 = document.createElement('h3');
-            myH3.textContent = 'Scheduled Closures';
-            myDiv.appendChild(myH3);
-            BOIclosureschedule.appendChild(myDiv);
-            let closureList = templeList[i].templeClosureSchedule;
-            let closureItem = 0;
-            for (let j = 0; j < closureList.length; j++) {
-                let closure = closureList[closureItem];
-                closureItem++;
-                //create HTL content on the fly
-                let myPara = document.createElement('p');                
-                myPara.textContent = closure;
+            buildHTMLForTemple(BOIclosureschedule, 'BOIclosuredate', templeList[i]);
 
-                myDiv.setAttribute('class','BOIclosuredate');
-                myDiv.appendChild(myPara);
-                
-            }
         }
-                else if (templeList[i].name == "Kansas City Missouri Temple") {
-                let myDiv = document.createElement('div');
-                let myH3 = document.createElement('h3');
-                myH3.textContent = 'Scheduled Closures';
-                myDiv.appendChild(myH3);
-               KCMclosureschedule.appendChild(myDiv);
-                let closureList = templeList[i].templeClosureSchedule;
-                let closureItem = 0;
-                for (let j = 0; j < closureList.length; j++) {
-                    let closure = closureList[closureItem];
-                    closureItem++;
-                    //create HTL content on the fly
-                    let myPara = document.createElement('p');
-                    myPara.textContent = closure;
-                    myDiv.setAttribute('class', 'KCMclosuredate');
-                    myDiv.appendChild(myPara);
-                    
-                }
-            }
+        else if (templeList[i].name == "Kansas City Missouri Temple") {
+            buildHTMLForTemple(KCMclosureschedule,'KCMclosuredate', templeList[i]);
+
         }
     }
+    
+    function buildHTMLForTemple(containingDiv, classname, temple) {
+        let myDiv = document.createElement('div');
+        let myH3 = document.createElement('h3');
+        myH3.textContent = 'Scheduled Closures';
+        myDiv.appendChild(myH3);
+        containingDiv.appendChild(myDiv);
+        let closureList = temple.templeClosureSchedule;
+        let closureItem = 0;
+        for (let j = 0; j < closureList.length; j++) {
+            let closure = closureList[closureItem];
+            closureItem++;
+            //create HTL content on the fly
+            let myPara = document.createElement('p');
+            myPara.textContent = closure;
+            myDiv.setAttribute('class', classname);
+            myDiv.appendChild(myPara);
+
+        }
+    }
+}
 
     //        if (templeList[i].name == "St. Louis Missouri Temple" || templeList[i].name == "Philadelphia Pennsylvania Temple" || templeList[i].name == "Boise Idaho Temple" || templeList[i].name == "Kansas City Missouri Temple") {

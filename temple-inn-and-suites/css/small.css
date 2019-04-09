@@ -34,7 +34,7 @@ img{
 /*---------------Paragraph Styles------------------*/
 h1{
     font-size: 1em;
-    font-family: 'Oregano', cursive;
+    font-family: 'Heebo', sans-serif;
 }
 h2{
     font-size: 1.25em;
@@ -94,13 +94,18 @@ header{
     display: flex;
     grid-column: 1;
     grid-row: 2;
-    position: relative; 
+    position: relative;
+    min-width:  100px; 
 }
 .logoandcompany img{
     position: absolute; 
-    left: .07em; 
+    left: -.02em; 
     top: .1em;
     z-index: -1; 
+}
+.logocompany .h1{
+    position: absolute;
+    right: 1em; 
 }
 .headspacebutton{
     grid-column: 8;
@@ -200,23 +205,17 @@ nav a:hover{
 .fourtemplesgrid{
     display: grid; 
     grid-template-areas:
-    /*"closures" "closures" "closures" "closures" */
-    "PHL" "PHL"
-    "PHL" "PHL"
-    "PHL" "PHL"
-    "PHL" "PHL" 
-    "STL" "STL"
-    "STL" "STL"
-    "STL" "STL"
-    "STL" "STL"
-    "KCM" "KCM"
-    "KCM" "KCM"
-    "KCM" "KCM"
-    "KCM" "KCM"
-    "BOI" "BOI"
-    "BOI" "BOI"
-    "BOI" "BOI"
-    "BOI" "BOI"
+    "PHL"
+    "STL"
+    "KCM"
+    "BOI"
+}
+.PHL{
+    display: grid; 
+    grid-gap: 2em; 
+}
+.PHL .tImage{
+    max-width: 200px; 
 }
 /*.templewrapper .PHL{
     grid-area: PHL;
@@ -264,7 +263,7 @@ nav a:hover{
     max-width: 100%;
 }
 */
-.templetitle{
+/*.tTitle{
      min-height: 400px;
     background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");
 }
@@ -272,7 +271,8 @@ nav a:hover{
 .factsgrid{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: .5em;  
+    grid-gap: .5em 1em;
+    justify-content: baseline;  
 }
 .factsgrid .label{
     text-align: right;
@@ -280,6 +280,8 @@ nav a:hover{
 }
 .factsgrid .value{
     text-align: left; 
+    display: flex;
+    align-items: center; ; 
 }
 .factsgrid .no{
     color: red;

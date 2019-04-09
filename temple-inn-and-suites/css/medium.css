@@ -1,6 +1,16 @@
 @media only screen and (min-width: 460px){
 /*---------------Paragraph Styles------------------*/
 
+h1{
+    font-size: 1em;
+}
+h2{
+    font-size: 1.6em; 
+}
+.herobutton button{
+    font-size: 1.2em; 
+}
+
 header{
     grid-template-columns: 3fr repeat(6, 1fr) 3fr;
 }
@@ -26,37 +36,39 @@ nav{
     height: 100%;  
 }
 /*------------Temple Grid Layout------------------*/
-.templewrapper{
-    grid-template-columns: auto;
-    grid-template-rows: minmax(10em, 30em);
+
+.PHL{ 
+   /* grid-template-areas:
+    "PHLtContactInfo PHLtHistory PHLtSchedule"
+    "PHLtClosure PHLtImg PHLtImg"
+    "PHLtClosure PHLtImg PHLtImg"
+    "PHLtitle PHLtWeather PHLtSchedule2";*/
+    grid-template-rows: auto; 
+    grid-template-columns: 6fr 4fr;
 }
-.templecontactinfo{
-    grid-column: span 2;
-    background-color: var(--transtemplegold);
+/*.PHL .tTitle{
+    grid-area: PHLtTitle; 
 }
-.templetitle{
-    grid-row: 2; 
-    grid-column: span 3;
+.PHL .tImg{
+    grid-area: PHLtImg;
 }
-.templehistory{
-    grid-column: span 1;
+.PHL .tContactInfo{
+    grid-area: PHLtContactInfo;
 }
-.templeservices{
-    grid-column: span 2;
-    background-color: var(--transtemplepurple); 
+.PHL .tHistory{
+    grid-area: PHLtHistory;
 }
-.templeschedule{
-    grid-column: span 3; 
-    grid-row: span 2; 
-    background-color: var(--transtempleblue); 
+.PHL .tSchedule{
+    grid-area: PHLtSchedule;
 }
-.templecosureschedule{
-    grid-row: span 3; 
+.PHL .tClosure{
+    grid-area: PHLtClosure;
 }
-.templeweathersummary{
-    grid-row: span 2;
-    grid-column: span 2; 
+.PHL .tWeather{
+    grid-area: PHLtWeather;
 }
-.KCMclosuredate{
+.PHL .tSchedule2{
+    grid-area: PHLtSchedule2; 
+*/
 }
 }
