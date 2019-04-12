@@ -88,6 +88,9 @@ header{
     align-items: center;
     justify-items: center; 
 }
+main{
+    background-color: #fff; 
+}
 .callbanner{
     grid-column:1/9;
     width: 100%;
@@ -208,18 +211,27 @@ nav a:hover{
     text-decoration: none; 
 }
 /*---------------Feature Temple Grid layout------------------*/
+article{
+
+}
 .featuretemple{
 display: grid;
 justify-items: center;
+grid-column-gap: 1em;
+
 }
 .featuretemple .quote, .featuretemple .headline{
     display: flex; 
     align-items: center;
     min-height: 200px; 
-    background-color: #fff; 
+    background-color: #fff;
+    padding: 1em;
+
 }
 .featuretemplepics{
+    padding: 1em 0; 
     display: grid;
+    grid-gap: .2em; 
 }
 /*---------------Temples Grid layout------------------*/
 .fourtemplesgrid{

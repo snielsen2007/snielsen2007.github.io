@@ -34,4 +34,11 @@ nav a:hover {
     color: #333333;
     font-weight: bolder;
 }
+/*---------------Feature Temple Grid layout------------------*/
+.featuretemple{
+grid-template-columns: 2fr 3fr 4fr; 
+}
+.featuretemplepics{
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
 }
