@@ -2,7 +2,7 @@
     <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title> Inn & Suites | Book Your Room Directly With Temple Inn & Suites</title>
+        <title> Reservations | Inn & Suites | Book Your Room Directly With Temple Inn & Suites</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description"
             content="Browse Temple Inn & Suites' portfolio of accomodations.  Make your temple experience special by taking advantage of our ammenities">
@@ -33,8 +33,8 @@
             </div>
             <nav class="site-navigation">
                 <li><a href="#" onclick="toggleMenu()"> &#9776;</a></li>
-                <li class="active dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html">Home</a></li>
-                <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/reservations.html">Reservations</a></li>
+                <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html">Home</a></li>
+                <li class="active dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/reservations.html">Reservations</a></li>
                 <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/temples.html">Temples</a></li>
                 <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/services.html">Services</a></li>
                 <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/contact.html">Contact</a></li>
@@ -54,8 +54,40 @@
             </div>
         </header>
         <main>
-            <article class="featuretemplegrid">
-            </article>
+<form method="get" action="thanks.html">
+    <fieldset>
+        <legend>My Information</legend>
+        <label class="top">Full Name*<input type="text" name="name" pattern=[A-Za-z\s]{5,} required></label>
+        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+        <label class="top">Email*<input type="email" name="email" placeholder="janedoe@gmail.com" required></label>
+        <label class="top">State*<input type="text" name="state" required></label>
+    </fieldset>
+    <fieldset>
+        <legend>Reservation Information</legend>
+        <label class="top"> Beginning Date*<input type="date" name="startdate" required></label>
+        <label class="top"> Ending Date*<input type="date" name="enddate" required></label>
+        <label class="top">Number of Rooms*<input type="number" name="numberofrooms" required></label>
+        <label class="top">Location*
+            <select name="location" required>
+                <option value="" disabled selected>Select Location</option>
+                <option value="PHL">Philadelphia</option>
+                <option value="STL">Saint Louis</option>
+                <option value="KCM">Kansas City</option>
+                <option value="BOI">Boise</option>
+            </select>
+        </label>
+        <label class="top">Room Type*
+            <select name="roomtype" required>
+                <option value="" disabled selected>Select Location</option>
+                <option value="double">2 double </option>
+                <option value="king">1 king</option>
+                <option value="jrsuite">Jr Suite</option>
+                <option value="fullsuite">Full Suite</option>
+            </select>
+        </label>
+    </fieldset>
+    <input type="submit" value="Book My Reservation" class="submitBtn">
+</form>
         </main>
         <footer>
             <div class="footerbar">

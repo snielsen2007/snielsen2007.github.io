@@ -291,33 +291,79 @@ nav a:hover{
     color: green;
     font-weight: bolder;  
 }
-/*---------------Templefacts------------------*/
-/*
-.templefacts{
-    display:grid;
-    grid-gap: 1.25em;
-    grid-template-columns: 1fr;
-    margin-top: 5%; 
-    align-items: center;  
+/*---------------Reservations Form------------------*/
+form fieldset{
+    margin: 2rem .25rem;
+    border: 1px solid var(--templepurple);
+    border-radius: 10px;
+    padding: .5rem 2%; 
+    text-align: left; 
 }
-.templefacts div{
-    border: rgb(71, 71, 71) solid .075em;
-    padding: .75em;
-    background-color: #BEBEC4;
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: bold; 
 }
-.templefacts article{
-    box-shadow: 5px 10px 40px #777;
-    padding-top: 2em;
-    background-color: white;
-    display: flex;
-    flex-direction: column; 
-    align-content: flex-end;
+form label.top, form div {
+    display: block;
+    padding-top: 1rem; 
+    color: black;
+    font-size: .9rem;
 }
-.templefacts img{
-    max-width: 100%;
+form label.top input, form label.top select, form label.top textarea{
+    display: block;
+    font-size: 1.25em;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 18rem;
+    background-color: lightgrey;
 }
-.templedatalabel{
-    font-weight: bold;
+
+.radiocontainer{
+    padding: 0; 
+    margin-left: 1em; 
 }
-*/
-/*---------------ABCD------------------*/
+.radiocontainer input{
+    margin-right: .75em;
+}
+.sbs{
+    margin-top: .4em;
+    margin-left: .4em; 
+    width: auto;
+    padding: .5em .5em;
+    display: block; 
+}
+form input.submitBtn{
+    border: none;
+    background-color: var(--templepurple);
+    border-radius: 1rem;
+    color: white; 
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%; 
+    width: 96%;
+    max-width: 18rem;
+}
+form input.submitBtn:hover{
+    background-color: var(--templegold); 
+}
+form label.top input:required{
+    border: red solid 1px;
+}
+form label.top input:required:valid{
+    border: black solid 1px;
+}
+.successmessage{
+    margin-bottom: 25rem;
+    margin-top: 8rem; 
+}
+
+/*---------------Services------------------*/
+.freeamenities li, .specializedservices li{
+    text-align: left;
+    padding: .25em;
+    margin-left: 2em; 
+}

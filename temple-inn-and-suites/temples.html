@@ -37,15 +37,14 @@
         <nav class="site-navigation">
             <li><a href="#" onclick="toggleMenu()"> &#9776;</a></li>
             <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html">Home</a></li>
-            <li class="dropdown"><a href="#">Reservations</a></li>
-            <li class="active dropdown"><a
-                    href="https://snielsen2007.github.io/temple-inn-and-suites/temples.html">Temples</a></li>
-            <li class="dropdown"><a href="#">Services</a></li>
-            <li class="dropdown"><a href="#">Contact</a></li>
+            <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/reservations.html">Reservations</a></li>
+            <li class="active dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/temples.html">Temples</a></li>
+            <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/services.html">Services</a></li>
+            <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/contact.html">Contact</a></li>
         </nav>
         <div class="heroimage">
             <img src="potential-images/angelmoronisteeple-960.jpg.jpg
-                alt="Boise Sealing Room" sizes="100 vw"
+                alt=" Boise Sealing Room" sizes="100 vw"
                 srcset="potential-images/angelmoronisteeple-450px.jpg 700w, potential-images/angelmoronisteeple-960.jpg 960w">
             </img>
             <div class="heroforeground">
@@ -66,8 +65,8 @@
                     <h2>Philadelphia Pennsylvania Temple</h2>
                 </div>
                 <div class="tImage">
-                        <img src="potential-images/philadelphia-640x800px.jpg" alt="Philadelphia Temple lit">
-                    </div>
+                    <img src="potential-images/philadelphia-640x800px.jpg" alt="Philadelphia Temple lit">
+                </div>
                 <div class="tContactInfo">
                     <div class="templeinfotitle">
                         <h3>Contact Information</h3>
@@ -114,32 +113,44 @@
                         <div class="value no"> &#9746; </div>
                     </div>
                 </div>
-                    <div class="tSchedule">
-                        <div class="templeinfotitle">
-                            <h3>Today's Schedule</h3>
-                        </div>
-                        <div class="factsgrid">
-                            <div class="label">Baptistry:</div>
-                            <div class="value">6:00 PM - 9:30 PM
-                                Appointments Only</div>
-                            <div class="label">Iniatiatory:</div>
-                            <div class="value">5:45 PM - 9:00 PM Walk-ins Only</div>
-                            <div class="label">Endowment:</div>
-                            <div class="value"><span>6:30 PM Walk-ins Only</span>, 7:45 PM Walk-ins Only</div>
-                            <div class="label">Sealing:</div>
-                            <div class="value">7:30 AM - 4:00 PM
-                                Walk-ins Only</div>
-                        </div>
+                <div class="tSchedule">
+                    <div class="templeinfotitle">
+                        <h3>Today's Schedule</h3>
                     </div>
+                    <div class="factsgrid">
+                        <div class="label">Baptistry:</div>
+                        <div class="value">6:00 PM - 9:30 PM
+                            Appointments Only</div>
+                        <div class="label">Iniatiatory:</div>
+                        <div class="value">5:45 PM - 9:00 PM Walk-ins Only</div>
+                        <div class="label">Endowment:</div>
+                        <div class="value"><span>6:30 PM Walk-ins Only</span>, 7:45 PM Walk-ins Only</div>
+                        <div class="label">Sealing:</div>
+                        <div class="value">7:30 AM - 4:00 PM
+                            Walk-ins Only</div>
+                    </div>
+                </div>
                 <div class="tClosures" id="PHLclosures"></div>
                 <div class="tSchedule2">
                     <div class="templeinfotitle">
                         <h3>Temple Session Schedule</h3>
                     </div>
                 </div>
-                <div class="tWeather">
+                <div class="tWeather" id="PHLweather">
                     <div class="templeinfotitle">
                         <h3>Temple Weather Summary</h3>
+                    </div>
+                    <div class="weatherdetails">
+                        <div class="label">Currently:</div>
+                        <div class="value"><span id=descriptionvaluePHLweather></span></div>
+                        <div class="label">High:</div>
+                        <div class="value"><span id=temperaturevaluePHLweather></span>&deg;</div>
+                        <div class="label">Wind Chill:</div>
+                        <div class="value"><span id=windchillvaluePHLweather></span>&deg;</div>
+                        <div class="label">Humidity:</div>
+                        <div class="value"><span id=humidityvaluePHLweather></span>%</div>
+                        <div class="label">Wind Speed:</div>
+                        <div class="value"><span id=windspeedvaluePHLweather></span> mph</div>
                     </div>
                 </div>
             </div>
@@ -177,9 +188,21 @@
                     </div>
                 </div>
                 <div class="tClosures" id="KCMclosures"></div>
-                <div class="tWeather">
+                <div class="tWeather" id="KCMweather">
                     <div class="templeinfotitle">
                         <h3>Temple Weather Summary</h3>
+                    </div>
+                    <div class="weatherdetails">
+                        <div class="label">Currently:</div>
+                        <div class="value"><span id=descriptionvalueKCMweather></span></div>
+                        <div class="label">High:</div>
+                        <div class="value"><span id=temperaturevalueKCMweather></span>&deg;</div>
+                        <div class="label">Wind Chill:</div>
+                        <div class="value"><span id=windchillvalueKCMweather></span>&deg;</div>
+                        <div class="label">Humidity:</div>
+                        <div class="value"><span id=humidityvalueKCMweather></span>%</div>
+                        <div class="label">Wind Speed:</div>
+                        <div class="value"><span id=windspeedvalueKCMweather></span> mph</div>
                     </div>
                 </div>
             </div>
@@ -207,8 +230,20 @@
                 </div>
                 <div class="tClosures" id="STLclosures"></div>
                 <div class="tWeather">
-                    <div class="templeinfotitle">
+                    <div class="templeinfotitle" id="STLweather">
                         <h3>Temple Weather Summary</h3>
+                    </div>
+                    <div class="weatherdetails">
+                        <div class="label">Currently:</div>
+                        <div class="value"><span id=descriptionvalueSTLweather></span></div>
+                        <div class="label">High:</div>
+                        <div class="value"><span id=temperaturevalueSTLweather></span>&deg;</div>
+                        <div class="label">Wind Chill:</div>
+                        <div class="value"><span id=windchillvalueSTLweather></span>&deg;</div>
+                        <div class="label">Humidity:</div>
+                        <div class="value"><span id=humidityvalueSTLweather></span>%</div>
+                        <div class="label">Wind Speed:</div>
+                        <div class="value"><span id=windspeedvalueSTLweather></span> mph</div>
                     </div>
                 </div>
             </div>
@@ -235,10 +270,23 @@
                         <div class="value no"> &#9746; </div>
                     </div>
                 </div>
-                <div class="tClosures" id="BOIclosures"></div>
-            <div class="tWeather">
+            </div>
+            <div class="tClosures" id="BOIclosures"></div>
+            <div class="tWeather" id="BOIweather">
                 <div class="templeinfotitle">
                     <h3>Temple Weather Summary</h3>
+                </div>
+                <div class="weatherdetails">
+                    <div class="label">Currently:</div>
+                    <div class="value"><span id=descriptionvalueBOIweather></span></div>
+                    <div class="label">High:</div>
+                    <div class="value"><span id=temperaturevalueBOIweather></span>&deg;</div>
+                    <div class="label">Wind Chill:</div>
+                    <div class="value"><span id=windchillvalueBOIweather></span>&deg;</div>
+                    <div class="label">Humidity:</div>
+                    <div class="value"><span id=humidityvalueBOIweather></span>%</div>
+                    <div class="label">Wind Speed:</div>
+                    <div class="value"><span id=windspeedvalueBOIweather></span> mph</div>
                 </div>
             </div>
             </div>
@@ -252,7 +300,7 @@
                 <a href="#"><img class="socialicon" src="images/social-icon-intagram.png" alt="instagram link"></a>
             </div>
             <div class="footerinfo">
-                <p>&copy;2019 Temple Inn & Suites | Comfortable Stays and Upscale Receptions |<a href="#"> Attributions
+                <p>&copy;2019 Temple Inn & Suites | Comfortable Stays and Upscale Receptions |<a href="temple-inn-and-suites\temples.html"> Attributions
                     </a>|
                     Sarah Nielsen </p>
                 <p><span id="currentdate">today's date:</span></p>
@@ -262,5 +310,8 @@
     <script src="js/currentdate.js"></script>
     <script src="js/togglemenu.js"></script>
     <script src="js/templedata.js"></script>
+    <script src="js/currentweather.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
+
 </html>
