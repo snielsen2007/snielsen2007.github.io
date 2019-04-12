@@ -6,7 +6,7 @@
     line-height: 1.25em;
     text-align: center;
     color: var(--templeblack);
-    display: inline-fex; 
+    display: inline-fex;
 }
 :root{
     --templeblack: #393d42;
@@ -49,7 +49,9 @@ h3{
     letter-spacing: .05em;
     text-shadow: .001em .001em #000000;
 }
-h4{ 
+h4{
+    font-size: 1.2em;
+    font-family: 'Heebo'; 
 }
 h5{
 }
@@ -204,6 +206,20 @@ nav a:hover{
 .footerbar a:visited{
     color: #777;
     text-decoration: none; 
+}
+/*---------------Feature Temple Grid layout------------------*/
+.featuretemple{
+display: grid;
+justify-items: center;
+}
+.featuretemple .quote, .featuretemple .headline{
+    display: flex; 
+    align-items: center;
+    min-height: 200px; 
+    background-color: #fff; 
+}
+.featuretemplepics{
+    display: grid;
 }
 /*---------------Temples Grid layout------------------*/
 .fourtemplesgrid{
