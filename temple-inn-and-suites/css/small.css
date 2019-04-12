@@ -6,6 +6,7 @@
     line-height: 1.25em;
     text-align: center;
     color: var(--templeblack);
+    display: inline-fex; 
 }
 :root{
     --templeblack: #393d42;
@@ -73,6 +74,9 @@ button{
     text-shadow: .04em .04em #393D42;
     letter-spacing: .02em; 
     padding: .3em;
+}
+button:hover{
+    background-color: var(--templegold); 
 }
 /*---------------HEADER------------------*/
 header{
@@ -217,56 +221,7 @@ nav a:hover{
 .PHL .tImage{
     max-width: 200px; 
 }
-/*.templewrapper .PHL{
-    grid-area: PHL;
-    display: grid;
-    grid-template-areas: 
 
-    "PHLc"
-}
-.templewrapper .STL{
-    grid-area: STL; 
-}
-.templewrapper .KCM{
-    grid-area: KCM;
-}
-.templewrapper .BOI{
-    grid-area: BOI; 
-}
-/*.closuregrid{
-    grid-area: closures;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas: 
-     "PHLc" "STLc" "KCMc" "BOIc";
- 
-}
-.closuregrid .PHLclosuredate{
-    grid-area: PHLc;
-}
-.closuregrid .STLclosuredate{
-    grid-area: STLc;
-}
-.closuregrid .KCMclosuredate{
-    grid-area: KCMc; 
-}
-.closuregrid .BOIclosuredate{
-    grid-area: BOIc;
-}
-
-
-/*.templewrapper{
-    border: solid var(--templepurple);
-    display: grid;
-    grid-auto-flow: dense; 
-    grid-gap: 2em;
-    max-width: 100%;
-}
-*/
-/*.tTitle{
-     min-height: 400px;
-    background-image: url("/temple-inn-and-suites/potential-images/philadelphia-640x800px.jpg");
-}
 /*---------------Temple Facts Grids------------------*/
 .factsgrid{
     display: grid;
@@ -292,12 +247,16 @@ nav a:hover{
     font-weight: bolder;  
 }
 /*---------------Reservations Form------------------*/
+
 form fieldset{
+    flex-direction: column; 
     margin: 2rem .25rem;
     border: 1px solid var(--templepurple);
     border-radius: 10px;
     padding: .5rem 2%; 
-    text-align: left; 
+    display: inline-flex;
+    align-self: left;
+    justify-content: flex-start; 
 }
 form legend {
     color: black;
@@ -306,20 +265,19 @@ form legend {
     font-weight: bold; 
 }
 form label.top, form div {
-    display: block;
+    width: 100%; 
     padding-top: 1rem; 
     color: black;
     font-size: .9rem;
 }
 form label.top input, form label.top select, form label.top textarea{
-    display: block;
     font-size: 1.25em;
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 18rem;
+    max-width: 40rem;
     background-color: lightgrey;
 }
 
@@ -334,18 +292,23 @@ form label.top input, form label.top select, form label.top textarea{
     margin-top: .4em;
     margin-left: .4em; 
     width: auto;
-    padding: .5em .5em;
-    display: block; 
+    padding: .5em .5em; 
 }
 form input.submitBtn{
-    border: none;
-    background-color: var(--templepurple);
-    border-radius: 1rem;
-    color: white; 
+    border-color: #e9cb70;
+    border-width: 5px; 
+    color: black; 
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%; 
     width: 96%;
     max-width: 18rem;
+    text-shadow: .04em .04em #393D42;
+    letter-spacing: .02em;
+    border-style: double;
+    border-image: initial;
+    background-color: transparent;
+    border-width: 2px; 
+
 }
 form input.submitBtn:hover{
     background-color: var(--templegold); 

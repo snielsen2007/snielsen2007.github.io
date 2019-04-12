@@ -55,6 +55,7 @@
         </header>
         <main>
 <form method="get" action="thanks.html">
+    <div class=fieldsets>
     <fieldset>
         <legend>My Information</legend>
         <label class="top">Full Name*<input type="text" name="name" pattern=[A-Za-z\s]{5,} required></label>
@@ -85,7 +86,9 @@
                 <option value="fullsuite">Full Suite</option>
             </select>
         </label>
+        <label class="top">Special Accomodation Requests<textarea rows="2" name="comments"></textarea></label>
     </fieldset>
+    </div>
     <input type="submit" value="Book My Reservation" class="submitBtn">
 </form>
         </main>
