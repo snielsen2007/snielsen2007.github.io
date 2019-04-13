@@ -55,6 +55,7 @@ request.onload = function () {
             //create HTL content on the fly
             let myPara = document.createElement('p');
             myPara.textContent = closure;
+            myPara.setAttribute('class', 'closedate'); 
             myDiv.setAttribute('class', classname);
             myDiv.appendChild(myPara);
 

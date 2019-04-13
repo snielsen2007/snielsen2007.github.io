@@ -24,7 +24,6 @@ function cityURL() {
         apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=' + cities[i].cityId + '&units=imperial&APPID=be51ac7443b3bdad44d5779b4d1a2133';
         weatherRequest.open('Get', apiURLstring, true);
         weatherRequest.send();
-        console.log(apiURLstring);
     
     }
 }
@@ -35,7 +34,6 @@ weatherRequest.onload = function () {
         let weatherData = JSON.parse(weatherRequest.responseText);
         let desc = weatherData.weather[0].description;
         document.getElementById('descriptionvalue' + cities[i].city).innerHTML = desc;
-        console.log(cities[i].city);
         let tempF = parseFloat(weatherData.main.temp_max);
         document.getElementById('temperaturevalue' + cities[i].city).innerHTML = tempF;
         let speed = parseFloat(weatherData.wind.speed);
@@ -57,21 +55,3 @@ function windChill(tempF, speed) {
     //return result
     return wc;
 }
-
-
-/*}
-weatherStats;
-
-function weatherStats () {
-    let weatherData = JSON.parse(weatherRequest.responseText);
-    let desc = weatherData.weather[0].description;
-    document.getElementById('descriptionvalue' + city).innerHTML = desc;
-    console.log(city)
-    document.getElementById('temperaturevalue' + city).innerHTML = weatherData.main.temp_max;
-    document.getElementById('humidityvalue' + city).innerHTML = weatherData.main.humidity;
-    document.getElementById('windspeedvalue' + city).innerHTML = weatherData.wind.speed;
-    //trigger windchill function
-    return getWindChill();
-
-}
-*/
