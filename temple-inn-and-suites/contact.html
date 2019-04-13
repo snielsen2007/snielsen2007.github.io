@@ -36,16 +36,21 @@
         </div>
         </div>
         <nav class="site-navigation">
-            <li><a href="#" onclick="toggleMenu()"> &#9776;</a></li>
-            <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html">Home</a></li>
-            <li class="dropdown"><a
-                    href="https://snielsen2007.github.io/temple-inn-and-suites/reservations.html">Reservations</a></li>
-            <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/temples.html">Temples</a>
-            </li>
-            <li class="dropdown"><a
-                    href="https://snielsen2007.github.io/temple-inn-and-suites/services.html">Services</a></li>
-            <li class="active dropdown"><a
-                    href="https://snielsen2007.github.io/temple-inn-and-suites/contact.html">Contact</a></li>
+            <ul>
+                <li><a href="#" onclick="toggleMenu()"> &#9776;</a></li>
+                <li class="dropdown"><a href="https://snielsen2007.github.io/temple-inn-and-suites/index.html">Home</a>
+                </li>
+                <li class="dropdown"><a
+                        href="https://snielsen2007.github.io/temple-inn-and-suites/reservations.html">Reservations</a>
+                </li>
+                <li class="dropdown"><a
+                        href="https://snielsen2007.github.io/temple-inn-and-suites/temples.html">Temples</a>
+                </li>
+                <li class="dropdown"><a
+                        href="https://snielsen2007.github.io/temple-inn-and-suites/services.html">Services</a></li>
+                <li class="active dropdown"><a
+                        href="https://snielsen2007.github.io/temple-inn-and-suites/contact.html">Contact</a></li>
+            </ul>
         </nav>
         <div class="heroimage">
             <img src="images/kansascitytemple-960px.jpg"
@@ -69,10 +74,11 @@
                 <legend>My Information</legend>
                 <label class="top">Full Name*<input type="text" name="name" pattern=[A-Za-z\s]{5,} required></label>
                 <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="janedoe@gmail.com" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="janedoe@gmail.com"
+                        required></label>
                 <label class="top">Comments<textarea rows="2" name="comments"></textarea></label>
             </fieldset>
-        
+
             <input type="submit" value="Send My Comments" class="submitBtn">
         </form>
         <div class="contactinfo">
@@ -81,16 +87,16 @@
                 <li>4800 Montgomery Ln #300</li>
                 <li>Bethesda, MD</li>
             </ul>
-        
-        <div class=map>
-        <iframe width="600" height="450" frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?q=4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814&key=AIzaSyAASNlrEp5JHwvh31GIOcnR-flxPnvoSV0"
-            allowfullscreen></iframe>
-        </div>
+
+            <div class=map>
+                <iframe width="600" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814&key=AIzaSyAASNlrEp5JHwvh31GIOcnR-flxPnvoSV0"
+                    allowfullscreen></iframe>
+            </div>
         </div>
         <!--without this my webpage would be 300kb less-->
-       
-        
+
+
     </main>
     <footer>
         <div class="footerbar">
