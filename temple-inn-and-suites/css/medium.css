@@ -38,7 +38,8 @@ nav {
 }
 /*---------------Feature Temple Grid layout------------------*/
 .featuretemple{
-grid-template-columns: 2fr 3fr 4fr; 
+grid-template-columns: 1fr 1fr auto; 
+
 }
 .featuretemplepics{
     grid-template-columns: 1fr 1fr; 
