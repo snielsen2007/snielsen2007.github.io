@@ -6,7 +6,7 @@
     line-height: 1.25em;
     text-align: center;
     color: var(--templeblack);
-    display: inline-fex;
+    list-style: none; 
 }
 :root{
     --templeblack: #393d42;
@@ -27,7 +27,17 @@ body{
     max-width: 960px;
     background: var(--templewhite);
     align-content: center;
-    margin: auto; 
+    margin: auto;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around; 
+    justify-items: center;
+    justify-content: center;
+    align-self: space-around;
+    align-items: center; 
 }
 img{
     max-width:100%; 
@@ -211,13 +221,12 @@ nav a:hover{
     text-decoration: none; 
 }
 /*---------------Feature Temple Grid layout------------------*/
-article{
 
-}
 .featuretemple{
 display: grid;
 justify-items: center;
 grid-column-gap: 1em;
+padding-top: 2%; 
 
 }
 .featuretemple .quote, .featuretemple .headline{
@@ -225,46 +234,57 @@ grid-column-gap: 1em;
     align-items: center;
     min-height: 200px; 
     background-color: #fff;
-    padding: 1em;
+    padding: 10%;
 
 }
 .featuretemplepics{
-    padding: 1em 0; 
+    padding: 2% 0; 
     display: grid;
     grid-gap: .2em; 
 }
 /*---------------Temples Grid layout------------------*/
-.fourtemplesgrid{
+.templewrapper{
+    margin: 2%; 
+    padding: 2%; 
+    border-top: solid var(--templegold);
     display: grid; 
-    grid-template-areas:
-    "PHL"
-    "STL"
-    "KCM"
-    "BOI"
-}
-.PHL{
-    display: grid; 
-    grid-gap: 2em; 
-}
-.PHL .tImage{
-    max-width: 200px; 
+    grid-gap: 2em;
 }
 
+.tImage{
+    max-width: 250px; 
+}
+.tTitle{
+    background-color: var(--transtemplegold);
+    display: flex; 
+    flex-flow: column; 
+    align-content: center;
+    justify-content: center;  
+}
+.templeinfotitle{
+    padding: 5%; 
+}
+
+
 /*---------------Temple Facts Grids------------------*/
-.factsgrid{
+.factsgrid, .weatherdetails{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 3fr 5fr;
     grid-gap: .5em 1em;
     justify-content: baseline;  
 }
-.factsgrid .label{
+.label{
     text-align: right;
      
 }
-.factsgrid .value{
+.value{
     text-align: left; 
     display: flex;
     align-items: center; ; 
+}
+
+.tSchedule .factsgrid{ 
+grid-template-columns: 2fr 2fr 4fr; 
 }
 .factsgrid .no{
     color: red;
@@ -358,3 +378,49 @@ form label.top input:required:valid{
     padding: .25em;
     margin-left: 2em; 
 }
+/*---------------Missionaries------------------*/
+.missionarysuites{
+    padding-top: 5%; 
+}
+.suitesgallery{
+    display: grid;
+    grid-gap: 1em;
+    padding-top: 5%;
+    padding-bottom: 5%; 
+}
+/*---------------Contact------------------*/
+.contactform{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.contactinfo {
+    display: flex; 
+    flex-direction: column;
+    align-self: center;
+    max-width: 50%;
+    padding: 5%;  
+}
+iframe{
+    padding: 5%; 
+    max-width: 100%; 
+}
+/*---------------services------------------*/
+.servicescontaienr{
+    display: felx;
+    flex-direction: column; 
+    align-content: center;
+    justify-content: start;
+    padding: 5%;
+    flex-wrap: wrap;
+    max-width: 75%;  
+}
+.freeamenities, .specializedservices{
+    display: flex;
+    flex-direction: column; 
+    padding: 5% 10% 2% 10%; 
+}
+.servicescontainer h3{
+    padding: 5%; 
+}
+

@@ -50,40 +50,21 @@ grid-template-columns: 2fr 3fr 4fr;
     align-content: center; 
     justify-content: center; 
 }
+/*---------------Missionaries------------------*/
+.suitesgallery{
+    grid-template-columns: 1fr 1fr; 
+}
 /*------------Temple Grid Layout------------------*/
 
-.PHL{ 
-   /* grid-template-areas:
-    "PHLtContactInfo PHLtHistory PHLtSchedule"
-    "PHLtClosure PHLtImg PHLtImg"
-    "PHLtClosure PHLtImg PHLtImg"
-    "PHLtitle PHLtWeather PHLtSchedule2";*/
-    grid-template-rows: auto; 
-    grid-template-columns: 6fr 4fr;
+.templewrapper{  
+    grid-template-columns: 5fr 4fr;
 }
-/*.PHL .tTitle{
-    grid-area: PHLtTitle; 
+.tSchedule{
+    column-span: 2; 
 }
-.PHL .tImg{
-    grid-area: PHLtImg;
-}
-.PHL .tContactInfo{
-    grid-area: PHLtContactInfo;
-}
-.PHL .tHistory{
-    grid-area: PHLtHistory;
-}
-.PHL .tSchedule{
-    grid-area: PHLtSchedule;
-}
-.PHL .tClosure{
-    grid-area: PHLtClosure;
-}
-.PHL .tWeather{
-    grid-area: PHLtWeather;
-}
-.PHL .tSchedule2{
-    grid-area: PHLtSchedule2; 
-*/
+.freeamenities, .specializedservices{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 5% 10% 2% 10%; 
 }
 }

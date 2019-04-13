@@ -41,4 +41,8 @@ grid-template-columns: 2fr 3fr 4fr;
 .featuretemplepics{
     grid-template-columns: 1fr 1fr 1fr 1fr; 
 }
+/*---------------Missionaries------------------*/
+.suitesgallery{
+    grid-template-columns: 1fr 1fr 1fr; 
+}
 }

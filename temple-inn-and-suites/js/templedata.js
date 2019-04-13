@@ -45,6 +45,7 @@ request.onload = function () {
         let myH3 = document.createElement('h3');
         myH3.textContent = 'Scheduled Closures';
         myDiv.appendChild(myH3);
+        myH3.setAttribute('class', 'templeinfotitle'); 
         containingDiv.appendChild(myDiv);
         let closureList = temple.templeClosureSchedule;
         let closureItem = 0;
