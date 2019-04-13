@@ -12,9 +12,11 @@ h2{
 }
 
 /*---------------Navigation------------------*/
-nav{
+nav {
     position: relative;
     background-color: transparent;
+}
+nav ul{
     grid-template-columns: repeat(6, 1fr);
     align-content: center; 
 }
