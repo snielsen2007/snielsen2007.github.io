@@ -27,6 +27,9 @@ nav {
     height: 100%;
 
 }
+nav ul {
+    padding: 0; 
+}
 .responsive .heroimage{
     grid-column: 1/8;
 }

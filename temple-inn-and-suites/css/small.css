@@ -135,7 +135,7 @@ main{
     font-size: .8em; 
 /*---------------Navigation------------------*/
 }
-nav{
+nav {
     list-style-type: none;
     background-color: var(--templegold);
     grid-column: 3/7;
@@ -152,6 +152,7 @@ nav ul{
     display: grid;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-column-gap: 1em;
+    padding: 1.5em;
 }
 .dropdown{
     display: none;
