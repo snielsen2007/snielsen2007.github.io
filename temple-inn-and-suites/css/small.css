@@ -35,9 +35,10 @@ main{
     flex-wrap: wrap;
     align-content: space-around; 
     justify-items: center;
-    justify-content: center;
-    align-self: space-around;
+    justify-content: space-around;
+    align-self: center;
     align-items: center; 
+
 }
 img{
     max-width:100%; 
@@ -64,8 +65,10 @@ h4{
     font-family: 'Heebo'; 
 }
 h5{
-}
-h6{
+    font-weight: normal; 
+    font-size: 1.1em;
+    color: var(--templepurple);
+    letter-spacing: loose; 
 }
 pre {
   white-space: pre;
@@ -423,4 +426,21 @@ iframe{
 .servicescontainer h3{
     padding: 5%; 
 }
+.servicebuttons{
+    padding: 5%; 
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+.receptioninfo, .foodservice{
+ margin: 2%; 
+ padding: 2%
+}
+.foodservice ul{
+    display: grid;
+    grid-gap: 1em;
+    padding: 2%; 
+}
+
 
